@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Urbanist;
+    src: url(../Fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Urbanist;
+}
+.Outlet{
+    padding: 0 0;
+}

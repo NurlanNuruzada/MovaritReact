@@ -1,0 +1,266 @@
+.BetaVersionSection div {
+    padding: 14px 17px 14px 14px;
+    width: max-content;
+    border-radius: 59px;
+    gap: 10px;
+    background: rgba(255, 0, 31, 0.2);
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 0, 31, 0.7);
+}
+
+.BetaVersionSection img {
+    width: 18.33px;
+    height: 15.83px;
+    top: 15.67px;
+    left: 14.83px;
+    transform: translateY(-1.5px);
+}
+
+.BetaVersionSection div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainContainer {
+    padding: 127px 80px 0 80px;
+    height: max-content;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.SecconSection {
+    padding-top: 40px;
+    width: 100%;
+}
+
+.GetButton {
+    padding: 22px 28px 22px 28px;
+    border-radius: 48px;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1B1F;
+    background-color: #ffff !important;
+    padding: 18px 24px 18px 24px !important;
+    gap: 12px !important;
+    border-radius: 9999999px!important;
+}
+
+.LeftContainer {
+    color: white;
+}
+
+.MainTitle {
+    font-family: Urbanist;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.Desc {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+    ;
+}
+
+.Image {
+    width: 768px;
+    height: max-content;
+    border-radius: 23px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-width: 3px 3px 0 3px;
+    border-style: solid;
+    border-color: rgba(43, 45, 48, 1);
+}
+
+.RightContainer {
+    object-fit: contain;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 70px;
+    justify-content: flex-end;
+}
+
+@keyframes anim-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+.RightContainer {
+    --s: 1px;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 1rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: calc(-1*var(--s));
+        background: conic-gradient(from var(--angle) at 50% 50%, #00ffff 0%, #00ABFF 25%, #aa41ff 55%, #e2ff41 75%, #00FF0B 100%);
+        filter: blur(5rem);
+        transform: translate3d(0, 0, -1px);
+        border-radius: inherit;
+        pointer-events: none;
+        opacity: 0.35;
+        transition: background-color 1s ease-in-out;
+        animation: 5s rotate linear infinite;
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    .SecconSection {
+        grid-template-columns: 40% 60% !important
+    }
+
+    .MainTitle {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .Desc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .SecconSection {
+        grid-template-columns: 40% 60% !important
+    }
+
+    .MainTitle {
+        font-family: Urbanist;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .Desc {
+        font-size: 12px;
+    }
+
+    .GetButton {
+        padding: 14px 20px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .SecconSection {
+        grid-template-columns: 40% 60% !important
+    }
+
+    .MainTitle {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .Desc {
+        font-size: 12px;
+    }
+
+    .GetButton {
+        padding: 14px 20px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .MainContainer {
+        padding: 127px 20px 0 30px;
+    }
+
+    .BetaVersionSection div {
+        color: rgba(0, 255, 10, 0.7) ;
+        background-color: #00FF0A33 ;
+    }
+    .BetaVersionSection img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .SecconSection {
+        display: flex !important;
+        flex-direction: column !important;
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .MainContainer {
+        height: 700px;
+        overflow: hidden;
+    }
+
+    .Image {
+        width: 100%;
+    }
+
+    .MainTitle {
+        font-family: Urbanist;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .Desc {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .RightContainer {
+        justify-content: center !important;
+    }
+
+}
+
+@media screen and (min-width: 1750px) {
+    .RightContainer {
+        justify-content: center;
+    }
+}
