@@ -1,12 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
 import styles from './Header.module.css'
 import Image from '../../Images/logo.png'
 import ProfileImage from '../../Images/Profile.svg'
 import buyImage from '../../Images/Buy.svg'
+import SignIn from '../SignIn/SignIn'
 import { Input, ChakraProvider, InputLeftElement, InputGroup } from '@chakra-ui/react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { SearchIcon } from '@chakra-ui/icons'
 export default function Header() {
+  const [showSignIn, setShowSignIn] = useState(false)
   return (
     <div className={styles.Container}>
       <div className={styles.Main}>
@@ -32,11 +35,12 @@ export default function Header() {
                 <Input type='text' placeholder='Search' />
               </InputGroup>
             </ChakraProvider>
-            <div className={styles.Buttons}><img src={ProfileImage} alt="" srcset="" /></div>
+            <div className={styles.Buttons} onClick={()=>{setShowSignIn(true)}}><img src={ProfileImage} alt="" srcset="" /></div>
             <div className={styles.Buttons}><img src={buyImage} alt="" srcset="" /></div>
           </div>
         </div>
       </div>
+      {showSignIn && <SignIn setShowSignIn={setShowSignIn} showing={showSignIn}/>}
     </div>
   )
 }
