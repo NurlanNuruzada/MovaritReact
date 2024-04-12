@@ -5,9 +5,14 @@ import Image from '../../Images/logo.png'
 import ProfileImage from '../../Images/Profile.svg'
 import buyImage from '../../Images/Buy.svg'
 import SignIn from '../SignIn/SignIn'
+import SearchIcon from '../../Images/magnifyingglass.svg'
 import { Input, ChakraProvider, InputLeftElement, InputGroup } from '@chakra-ui/react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { SearchIcon } from '@chakra-ui/icons'
+import Image1 from '../../Images/1.svg'
+import Image2 from '../../Images/2.svg'
+import Image3 from '../../Images/4.svg'
+import Buy from '../../Images/Buy.svg'
+import Profile from '../../Images/Profile.svg'
 export default function Header() {
   const [showSignIn, setShowSignIn] = useState(false)
   return (
@@ -26,21 +31,31 @@ export default function Header() {
             <div className={styles.sellection}>Inspire me</div>
           </div>
           <div className={styles.right}>
-            <input type="text" />
             <ChakraProvider>
               <InputGroup>
                 <InputLeftElement pointerEvents='none'>
-                  <SearchIcon color='gray.300' />
+                  <img src={SearchIcon} alt="" />
                 </InputLeftElement>
-                <Input type='text' placeholder='Search' />
+                <Input className={styles.Input} type='text' placeholder='Search' />
               </InputGroup>
             </ChakraProvider>
-            <div className={styles.Buttons} onClick={()=>{setShowSignIn(true)}}><img src={ProfileImage} alt="" srcset="" /></div>
+            <div className={styles.Buttons} onClick={() => { setShowSignIn(true) }}><img src={ProfileImage} alt="" srcset="" /></div>
             <div className={styles.Buttons}><img src={buyImage} alt="" srcset="" /></div>
           </div>
         </div>
       </div>
-      {showSignIn && <SignIn setShowSignIn={setShowSignIn} showing={showSignIn}/>}
+      <div className={styles.MobileContainer}>
+        <div className={styles.ButtonContainer}>
+          <img src={Image1} alt="" srcset="" />
+          <img src={Image3} alt="" srcset="" />
+        </div>
+        <img src={Image} alt="" srcset="" />
+        <div className={styles.ButtonContainer}>
+          <img src={Profile} alt="" srcset="" />
+          <img src={Buy} alt="" srcset="" />
+        </div>
+      </div>
+      {showSignIn && <SignIn setShowSignIn={setShowSignIn} showing={showSignIn} />}
     </div>
   )
 }
