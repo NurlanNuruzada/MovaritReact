@@ -1,13 +1,24 @@
-.modalContent {
+.MainWrapper{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     background-color: #FFF9EE;
-    border-radius: 20px;
-    width: 480px;
 }
 
 .ModalHeader {
     text-align: center;
     line-height: 48px;
     font-size: 34px;
+}
+
+.SignUpImg{
+    object-fit: cover;
+    transform: scale(1.5);
+    object-position: 0% 75%;
+}
+
+.SignUpCheck{
+    color: #4D4F51;
 }
 
 .regBtn{
@@ -18,10 +29,4 @@
 .regBtn a {
     color: #96734D !important;
     text-decoration: underline !important;
-}
-
-@media (max-width:576px) {
-    .modalContent {
-        width: 100%;
-    }
 }

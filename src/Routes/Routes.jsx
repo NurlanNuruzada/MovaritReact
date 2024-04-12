@@ -1,7 +1,8 @@
 
-import { MainLayout } from "../Layouts/MainLayout";
+import { MainLayout } from "../Layouts/Main/MainLayout";
 import { useRoutes } from "react-router";
 import Home from "../Pages/Home/Home";
+import SignUp from "../Pages/SignUp/SignUp";
 import { useSelector } from "react-redux";
 
 
@@ -15,8 +16,12 @@ export default function Routes() {
         {
           path: "/",
           element: <Home />,
-        },
+        }
       ],
+    },
+    {
+      path: "/register",
+      element: <SignUp />,
     }
   ];
   return useRoutes(routes);

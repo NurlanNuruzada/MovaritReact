@@ -51,7 +51,7 @@ export default function Header() {
         </div>
         <img src={Image} alt="" srcset="" />
         <div className={styles.ButtonContainer}>
-          <img src={Profile} alt="" srcset="" />
+          <img onClick={() => { setShowSignIn(true) }} src={Profile} alt="" srcset="" />
           <img src={Buy} alt="" srcset="" />
         </div>
       </div>
