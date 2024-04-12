@@ -34,8 +34,6 @@
     text-align: left;
 }
 
-
-
 .Main {
     position: relative;
     top: 0;
@@ -45,6 +43,7 @@
 .Container {
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
 .MenuContainer {
@@ -175,4 +174,16 @@
     .ButtonContainer {
         display: none;
     }
+}
+
+.sellection {
+    cursor: pointer;
+}
+
+.ButtonContainer img {
+    cursor: pointer;
+}
+
+.Buttons {
+    cursor: pointer;
 }

@@ -7,10 +7,10 @@ import SearchIcon from '../../Images/magnifyingglass.svg'
 import { Input, ChakraProvider, InputLeftElement, InputGroup } from '@chakra-ui/react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Image1 from '../../Images/1.svg'
-import Image2 from '../../Images/2.svg'
 import Image3 from '../../Images/4.svg'
 import Buy from '../../Images/Buy.svg'
 import Profile from '../../Images/Profile.svg'
+
 export default function Header() {
   return (
     <div className={styles.Container}>
@@ -36,20 +36,20 @@ export default function Header() {
                 <Input className={styles.Input} type='text' placeholder='Search' />
               </InputGroup>
             </ChakraProvider>
-            <div className={styles.Buttons}><img src={ProfileImage} alt="" srcset="" /></div>
-            <div className={styles.Buttons}><img src={buyImage} alt="" srcset="" /></div>
+            <div className={styles.Buttons}><img src={ProfileImage} alt="" srcSet="" /></div>
+            <div className={styles.Buttons}><img src={buyImage} alt="" srcSet="" /></div>
           </div>
         </div>
       </div>
       <div className={styles.MobileContainer}>
         <div className={styles.ButtonContainer}>
-          <img src={Image1} alt="" srcset="" />
-          <img src={Image3} alt="" srcset="" />
+          <img src={Image1} alt="" srcSet="" />
+          <img src={Image3} alt="" srcSet="" />
         </div>
-        <img src={Image} alt="" srcset="" />
+        <img src={Image} alt="" srcSet="" />
         <div className={styles.ButtonContainer}>
-          <img src={Profile} alt="" srcset="" />
-          <img src={Buy} alt="" srcset="" />
+          <img src={Profile} alt="" srcSet="" />
+          <img src={Buy} alt="" srcSet="" />
         </div>
       </div>
     </div>
