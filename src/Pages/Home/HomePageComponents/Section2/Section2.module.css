@@ -1,0 +1,39 @@
+.LeftImage {
+    width: 336px;
+    height: 143px;
+    top: 789px;
+    left: 62px;
+    border-radius: 12px;
+}
+.MainContent{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 71px;
+}
+.InformationContainer{
+    display: flex;
+    align-items: center;
+}
+.InformationContainer h1 {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+    color: rgba(150, 115, 77, 1);
+}
+.InformationContainer p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    
+}
+.InfoContainer{
+    padding: 12px 0 12px 12px;
+}

@@ -1,0 +1,41 @@
+.Main {
+    width: 420px;
+    height: 284px;
+    border-radius: 16px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.Main img {
+    object-fit: cover;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.CategoryName {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.Main:hover .CategoryName {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Main:hover {
+    visibility: visible;
+    opacity: 1;
+    background: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(0deg, #DADADA, #DADADA); /* Solid gray background */
+}
