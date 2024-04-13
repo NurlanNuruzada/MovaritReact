@@ -1,3 +1,7 @@
+.MainWrapper {
+    position: relative;
+}
+
 .LeftImage {
     width: 336px;
     height: 143px;
@@ -5,18 +9,22 @@
     left: 62px;
     border-radius: 12px;
 }
-.MainContent{
+
+.MainContent {
     height: max-content;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 71px;
+    background-color: #FFF9EE;
 }
-.InformationContainer{
+
+.InformationContainer {
     display: flex;
     align-items: center;
 }
+
 .InformationContainer h1 {
     margin: 0;
     font-family: Poppins;
@@ -26,14 +34,108 @@
     text-align: left;
     color: rgba(150, 115, 77, 1);
 }
+
 .InformationContainer p {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
     text-align: left;
-    
+
 }
-.InfoContainer{
+
+.InfoContainer {
     padding: 12px 0 12px 12px;
+}
+
+/* .navTab:before, */
+
+.navTab {
+    --bs-nav-tabs-border-width: 0;
+    position: absolute;
+    top: -92px;
+}
+
+.navTab li {
+    list-style: none outside none;
+    float: left;
+    position: relative;
+}
+
+/* .navTab li:before,
+.navTab a:before, */
+.navTab li:after,
+.navTab a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+}
+
+/* .navTab li:before, */
+.navTab li:after {
+    background: #FFF9EE;
+    width: 32px;
+    height: 32px;
+}
+
+.navTab a {
+    float: left;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #96734D;
+    background: #FFF9EE;
+    border-radius: 32px 32px 0 0;
+}
+
+.navTab .active a {
+    background: #FFF9EE;
+    color: #96734D;
+}
+
+/* .navTab a:before, */
+.navTab a:after {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: #FFF9EE;
+    z-index: 2;
+}
+
+/* .navTab .active a:before, */
+.navTab .active a:after {
+    background: #FFF9EE;
+}
+
+/* .navTab a:before {
+    left: -20px;
+} */
+
+.navTab a:after {
+    right: -64px
+}
+
+/* .navTab .active:before, */
+.navTab .active:after {
+    z-index: 1;
+    background: #FFF9EE;
+}
+
+/* .navTab li:first-child a:before, */
+.navTab li:last-child a:after {
+    background-color: #fff;
+}
+
+.tab-content {
+    background: #FFF9EE;
+    color: #96734D;
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
 }

@@ -1,0 +1,53 @@
+.PhotoFrame {
+    background-color: #cbbba3;
+    border: solid 0.5rem #e0cfb5;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.Photo {
+    border: solid 2px #c4b59e;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.PhotoFrameWrapper {
+    background-color: #F3EEDD;
+    border-radius: 20px;
+    padding: 4rem 3rem;
+}
+
+.CardTitle,
+.CardText,
+.CardPrice {
+    color: #2B2C2E;
+}
+
+.CardTitle,
+.CardPrice {
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.CardSubtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #AA8761;
+}
+
+.CardText {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.LikeBtn{
+    margin-top: 2rem;
+    margin-right: 2rem;
+}

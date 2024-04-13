@@ -14,7 +14,7 @@ export default function SignUp() {
             <div className={`d-none d-lg-block position-relative col-5 overflow-hidden`}>
                 <img className={`${Styles.SignUpImg} w-100 h-100`} src={SignUpImg} alt="" />
                 <div className={`${Styles.SignUpImgOverlay} card-img-overlay p-5 d-flex align-items-end`}>
-                    <span className='d-flex col-lg-6 col-xl-4 col-xxl-3 justify-content-between'>
+                    <span className='d-flex col-lg-6 col-xl-4 justify-content-between'>
                         <button className='social-media-link social-media-link-outline rounded-circle'><FontAwesomeIcon icon={faInstagram} /></button>
                         <button className='social-media-link social-media-link-outline rounded-circle'><FontAwesomeIcon icon={faPinterestP} /></button>
                         <button className='social-media-link social-media-link-outline rounded-circle'><FontAwesomeIcon icon={faFacebookF} /></button>
