@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from '../Section2/Section2.module.css'
-import Image from '../../../../Images/Section1.png';
-import Background from '../../../../Images/Section2.jpg';
+import Image from '../../../../../Images/Section1.png';
+import Background from '../../../../../Images/Section2.jpg';
 export default function Section2() {
     return (
         <div className={`${Styles.MainWrapper}`}>

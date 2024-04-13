@@ -1,8 +1,8 @@
 import React from 'react'
-import letsPlayImg from '../../../../Images/letsplay-photo.jpeg'
+import letsPlayImg from '../../../../../Images/letsplay-photo.jpeg'
 import Styles from './LetsPlay.module.css'
 import Card from 'react-bootstrap/Card';
-import HeartIcon from '../../../../Images/Heart.svg'
+import HeartIcon from '../../../../../Images/Heart.svg'
 
 export default function LetsPlay() {
   return (

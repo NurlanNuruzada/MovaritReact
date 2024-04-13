@@ -1,5 +1,5 @@
 .Main{
-    padding: 0 0 0 64px;
+    padding: 71px 50px 0 62px;
 }
 .TitleContainer h1 {
     font-family: Poppins;
@@ -34,17 +34,15 @@
 }
 
 .TitleContainer {
-    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 28px;
 }
-
-.SliderItem {
+.SliderItem{
     margin: 0 !important;
     width: max-content !important;
-    margin-right: 32px !important;
+    margin: 0 16px !important;
 }
 
 @media screen and (max-width:1051px) {
@@ -55,7 +53,7 @@
         line-height: 32px;
         text-align: left;
     }
-
+    
     .SeeAllContainer p {
         font-family: Poppins;
         font-size: 18px;
@@ -63,10 +61,16 @@
         line-height: 28px;
         text-align: left;
     }
-    .TitleContainer {
-        padding-top: 64px;
-    }
     .Main{
-        padding: 0 0 0 24px;
+        padding: 94px 0 0 24px;
+    }
+}
+.PaddingSecttings {
+    padding-right: 22px;
+}
+
+@media screen and (max-width:1051px) {
+    .PaddingSecttings {
+        padding-right: 32px;
     }
 }

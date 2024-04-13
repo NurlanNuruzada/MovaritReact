@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Section1.module.css';
-import Image from '../../../../Images/Section1.png';
-import Background from '../../../../Images/mobileBackground.png';
+import Image from '../../../../../Images/Section1.png';
+import Background from '../../../../../Images/mobileBackground.png';
 
 export default function Section1() {
   // Initialize the state with null or a default selected option

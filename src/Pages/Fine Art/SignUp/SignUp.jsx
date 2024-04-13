@@ -1,8 +1,8 @@
 import React from 'react'
 import Styles from './SignUp.module.css'
-import LogoText from '../../Images/Logo Text.svg'
+import LogoText from '../../../Images/Logo Text.svg'
 import Form from 'react-bootstrap/Form';
-import SignUpImg from '../../Images/SignUp.jpeg'
+import SignUpImg from '../../../Images/SignUp.jpeg'
 import { useNavigate } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faApple, faGoogle, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons'

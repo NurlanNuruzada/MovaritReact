@@ -4,7 +4,6 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin-right: 36px;
 }
 
 .Main h1 {
@@ -47,7 +46,6 @@
     }
     .Main {
         width: 266px;
-        margin-right: 24px;
     }
     .Main h1 {
         font-size: 20px;

@@ -30,7 +30,6 @@
 .Main {
     width: 308px;
     height: max-content;
-    margin-right: 32px;
 }
 
 .Main img {
@@ -52,7 +51,6 @@
     .Main {
         width: 186px;
         height: max-content;
-        margin-right: 22px;
     }
 
     .ArtName {

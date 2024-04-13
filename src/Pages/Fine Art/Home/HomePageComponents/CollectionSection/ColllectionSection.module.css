@@ -8,7 +8,8 @@
     line-height: 64px;
     text-align: left;
 }
-.MainContainer{
+
+.MainContainer {
     padding: 0 64px;
 }
 
@@ -56,9 +57,10 @@
 }
 
 @media screen and (max-width:1051px) {
-    .MainContainer{
+    .MainContainer {
         padding: 0;
     }
+
     .TitleContainer h1 {
         font-family: Poppins;
         font-size: 24px;
@@ -73,6 +75,7 @@
         justify-content: center;
         padding-top: 64px;
     }
+
     .SeeAllContainer {
         display: none;
     }
@@ -89,6 +92,7 @@
     .CollectionContainer {
         margin: 0 12px !important;
     }
+
     .CollectionContainer {
         padding-bottom: 0 !important;
     }
@@ -96,4 +100,8 @@
 
 .Main {
     display: none;
+}
+
+.PaddingSecttings {
+    padding-right: 24px;
 }

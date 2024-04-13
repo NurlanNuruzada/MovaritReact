@@ -1,10 +1,9 @@
 
 import { MainLayout } from "../Layouts/Main/MainLayout";
 import { useRoutes } from "react-router";
-import Home from "../Pages/Home/Home";
-import SignUp from "../Pages/SignUp/SignUp";
 import { useSelector } from "react-redux";
-
+import SignUp from '../Pages/Fine Art/SignUp/SignUp'
+import Home from '../Pages/Fine Art/Home/Home'
 
 export default function Routes() {
   const { token, email } = useSelector((x) => x.auth);
