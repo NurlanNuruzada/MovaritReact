@@ -1,5 +1,6 @@
 .MainWrapper {
     position: relative;
+    padding-left: 62px;
 }
 
 .LeftImage {
@@ -10,14 +11,18 @@
     border-radius: 12px;
 }
 
+.Container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .MainContent {
     height: max-content;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 60px;
     padding-bottom: 71px;
-    background-color: #FFF9EE;
 }
 
 .InformationContainer {
@@ -138,4 +143,44 @@
 
 .tab-pane.active {
     display: block;
+}
+
+@media screen and (max-width:1200px) {
+    .MainContent {
+        flex-direction: column;
+        padding-bottom: 0;
+        height: max-content;
+    }
+
+    .MainWrapper {
+        padding: 24px !important;
+    }
+
+    .LeftImage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .InformationContainer h1 {
+        font-family: Poppins;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .InformationContainer p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+    }
+    .InfoContainer {
+        padding: 0  !important;
+    }
+    .InformationContainer {
+        flex-direction: column;
+    }
 }

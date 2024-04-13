@@ -22,40 +22,44 @@ export default function Header() {
           <h1>PROFESSIONAL SHOPPING WORLDWIDE. </h1>
           <p>FREE RETURNS WITHIN 1 YEAR.</p>
         </div>
-        <div className={styles.MenuContainer}>
-          <div className={styles.left}>
-            <img src={Image} alt="" />
-            <div className={styles.sellection}>Artworks<KeyboardArrowDownIcon fontSize='medium' /></div>
-            <div className={styles.sellection}>Gift Card</div>
-            <div className={styles.sellection}>Comission Work</div>
-            <div className={styles.sellection}>Inspire me</div>
-          </div>
-          <div className={styles.right}>
-            <ChakraProvider>
-              <InputGroup>
-                <InputLeftElement pointerEvents='none'>
-                  <img src={SearchIcon} alt="" />
-                </InputLeftElement>
-                <Input className={styles.Input} type='text' placeholder='Search' />
-              </InputGroup>
-            </ChakraProvider>
-            <div className={styles.Buttons} onClick={() => { setShowSignIn(true) }}><img src={ProfileImage} alt="" srcset="" /></div>
-            <div className={styles.Buttons}><img src={buyImage} alt="" srcset="" /></div>
+        <div className={styles.PaddingContainer}>
+          <div className={styles.MenuContainer}>
+            <div className={styles.left}>
+              <img src={Image} alt="" />
+              <div className={styles.sellection}>Artworks<KeyboardArrowDownIcon fontSize='medium' /></div>
+              <div className={styles.sellection}>Gift Card</div>
+              <div className={styles.sellection}>Comission Work</div>
+              <div className={styles.sellection}>Inspire me</div>
+            </div>
+            <div className={styles.right}>
+              <ChakraProvider>
+                <InputGroup>
+                  <InputLeftElement pointerEvents='none'>
+                    <img src={SearchIcon} alt="" />
+                  </InputLeftElement>
+                  <Input className={styles.Input} type='text' placeholder='Search' />
+                </InputGroup>
+              </ChakraProvider>
+              <div className={styles.Buttons} onClick={() => { setShowSignIn(true) }}><img src={ProfileImage} alt="" srcset="" /></div>
+              <div className={styles.Buttons}><img src={buyImage} alt="" srcset="" /></div>
+            </div>
           </div>
         </div>
       </div>
-      <div className={styles.MobileContainer}>
-        <div className={styles.ButtonContainer}>
-          <img src={Image1} alt="" srcSet="" />
-          <img src={Image3} alt="" srcSet="" />
+      <div className={styles.MobileMain}>
+        <div className={styles.MobileContainer}>
+          <div className={styles.ButtonContainer}>
+            <img src={Image1} alt="" srcSet="" />
+            <img src={Image3} alt="" srcSet="" />
+          </div>
+          <img src={Image} alt="" srcSet="" />
+          <div className={styles.ButtonContainer}>
+            <img onClick={() => { setShowSignIn(true) }} src={Profile} alt="" srcset="" />
+            <img src={Buy} alt="" srcset="" />
+          </div>
         </div>
-        <img src={Image} alt="" srcSet="" />
-        <div className={styles.ButtonContainer}>
-          <img onClick={() => { setShowSignIn(true) }} src={Profile} alt="" srcset="" />
-          <img src={Buy} alt="" srcset="" />
-        </div>
+        {showSignIn && <SignIn setShowSignIn={setShowSignIn} showing={showSignIn} />}
       </div>
-      {showSignIn && <SignIn setShowSignIn={setShowSignIn} showing={showSignIn} />}
     </div>
   )
 }

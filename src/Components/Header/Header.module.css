@@ -14,6 +14,11 @@
     justify-content: center;
     color: white;
     flex-wrap: wrap;
+
+}
+
+.PaddingContainer {
+    margin: 0 62px;
 }
 
 .MainContainer h1 {
@@ -132,7 +137,7 @@
     }
 }
 
-@media screen and (max-width:1051px) {
+@media screen and (max-width:1200px) {
     .left {
         display: none;
     }
@@ -145,8 +150,11 @@
         display: none;
     }
 
+    .MobileMain {
+        margin: 20px 24px;
+    }
+
     .MobileContainer {
-        margin-top: 20px;
         width: 100%;
         height: 58px;
         top: 124px;
@@ -166,7 +174,7 @@
     }
 }
 
-@media screen and (min-width:1051px) {
+@media screen and (min-width:1200px) {
     .MobileContainer {
         display: none;
     }
