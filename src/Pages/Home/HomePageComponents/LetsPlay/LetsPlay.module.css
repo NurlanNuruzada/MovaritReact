@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+.Main {
+    padding: 100px 95px 100px 62px;
+}
+
 .Photo {
     border: solid 2px #c4b59e;
     width: 100%;
@@ -47,7 +51,13 @@
     line-height: 2rem;
 }
 
-.LikeBtn{
+.LikeBtn {
     margin-top: 2rem;
     margin-right: 2rem;
+}
+
+@media screen and (max-width:1051px) {
+    .Main {
+        padding: 64px 24px;
+    }
 }

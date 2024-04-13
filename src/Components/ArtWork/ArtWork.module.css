@@ -39,11 +39,11 @@
     border-radius: 12px;
 }
 
-<<<<<<< HEAD
-.LikeBtn{
+.LikeBtn {
     margin-top: 1rem;
     margin-right: 1rem;
-=======
+}
+
 @media screen and (max-width:1051px) {
     .Main img {
         height: 224px;
@@ -75,5 +75,5 @@
         font-weight: 600;
         line-height: 28px;
     }
->>>>>>> 6b21ab4b6ba1fd129d598cbb6ae9730eafb986f3
+
 }

@@ -6,9 +6,9 @@ import HeartIcon from '../../../../Images/Heart.svg'
 
 export default function LetsPlay() {
   return (
-    <div className='container-fluid d-flex flex-column'>
+    <div className={` container-fluid d-flex flex-column ${Styles.Main}`}>
       <h3 className='mb-1'>Let's Play</h3>
-      <div className='d-flex mt-4'>
+      <div className='d-flex mt-4 flex-column flex-md-row'>
         <div className={`${Styles.PhotoFrameWrapper} col-6 d-flex flex-column justify-content-center align-items-center position-relative`}>
           <button className={`${Styles.LikeBtn} position-absolute top-0 end-0 btn btn-like rounded-circle`}><img src={HeartIcon} /></button>
           <span className={`${Styles.PhotoFrame} col-6 mb-3`}>
