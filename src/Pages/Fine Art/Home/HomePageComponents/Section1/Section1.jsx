@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import styles from './Section1.module.css';
 import Image from '../../../../../Images/Section1.png';
 import Background from '../../../../../Images/mobileBackground.png';
+import ClippedBg from '../../../../../Images/Clipped-Long.svg';
 
 export default function Section1() {
   // Initialize the state with null or a default selected option
   const [selectedOption, setSelectedOption] = useState("Fine Art");
 
   return (
-    <div className={styles.MainContainer}>
+    <div className={`${styles.MainContainer} position-relative`}>
       <img className={styles.Section1Image} src={window.innerWidth > 440 ? Image : Background} alt="" />
       <div className={styles.TextContainer}>
         <h1>Discover Artworks</h1>
@@ -28,6 +29,9 @@ export default function Section1() {
           </button>
         </div>
       </div>
+      <span className={styles.ClippedBgWrapper}>
+        <img src={ClippedBg} alt="" />
+      </span>
     </div>
   );
 }

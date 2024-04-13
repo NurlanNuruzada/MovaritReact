@@ -11,18 +11,29 @@
     border-radius: 12px;
 }
 
+.TextSpan {
+    position: absolute;
+    display: block;
+    color: #96734D;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 336px;
+    bottom: 172px;
+}
+
 .Container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 432px);
 }
 
 .MainContent {
+    margin-top: 2.5rem;
     height: max-content;
     width: 100%;
     display: flex;
     gap: 60px;
-    padding-bottom: 71px;
 }
 
 .InformationContainer {
@@ -177,9 +188,11 @@
         line-height: 28px;
         text-align: center;
     }
+
     .InfoContainer {
-        padding: 0  !important;
+        padding: 0 !important;
     }
+
     .InformationContainer {
         flex-direction: column;
     }
