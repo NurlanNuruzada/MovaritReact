@@ -48,22 +48,6 @@ export default function Section2() {
                         </div>
                     </div>
                 </div>
-                <div >
-                </div>
-            </div>
-            <div className={Styles.InformationContainer}>
-                <h1>100K</h1>
-                <div className={Styles.InfoContainer}>
-                    <p>GLOBAL</p>
-                    <p>PARTNERS</p>
-                </div>
-            </div>
-            <div className={Styles.InformationContainer}>
-                <h1>100%</h1>
-                <div className={Styles.InfoContainer}>
-                    <p>HIGH</p>
-                    <p>QUALITY</p>
-                </div>
             </div>
         </div>
     )
