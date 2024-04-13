@@ -1,33 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Section1.module.css';
 import Image from '../../../../../Images/Section1.png';
 import Background from '../../../../../Images/mobileBackground.png';
 import ClippedBg from '../../../../../Images/Clipped-Long.svg';
+import NavigateOptions from '../../../../../Components/NavigateOptions/NavigateOptions';
 
 export default function Section1() {
-  // Initialize the state with null or a default selected option
-  const [selectedOption, setSelectedOption] = useState("Fine Art");
+  const [width, setWidth] = useState(window.innerWidth);
+  function useWindowWidth() {
+    useEffect(() => {
+      const handleResize = () => {
+        setWidth(window.innerWidth);  // Update the width state
+      };
 
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return width;  // This is the getter for the current window width
+  }
+  useWindowWidth()
   return (
-    <div className={`${styles.MainContainer} position-relative`}>
-      <img className={styles.Section1Image} src={window.innerWidth > 440 ? Image : Background} alt="" />
+    <div className={styles.MainContainer}>
+      <img className={styles.Section1Image} src={width > 440 ? Image : Background} alt="" />
       <div className={styles.TextContainer}>
         <h1>Discover Artworks</h1>
         <h1>Beyond Boundaries</h1>
-        <div className={styles.OptionContainer}>
-          <button
-            onClick={() => setSelectedOption('Fine Art')}
-            className={selectedOption === 'Fine Art' ? styles.OptionSelected : styles.Option}
-          >
-            Fine Art
-          </button>
-          <button
-            onClick={() => setSelectedOption('Digital Art')}
-            className={selectedOption === 'Digital Art' ? styles.OptionSelected : styles.Option}
-          >
-            Digital Art
-          </button>
-        </div>
+        <NavigateOptions />
       </div>
       <span className={styles.ClippedBgWrapper}>
         <img src={ClippedBg} alt="" />

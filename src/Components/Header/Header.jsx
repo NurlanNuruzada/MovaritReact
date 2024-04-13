@@ -13,7 +13,7 @@ import Image3 from '../../Images/4.svg'
 import Buy from '../../Images/Buy.svg'
 import Profile from '../../Images/Profile.svg'
 
-export default function Header() {
+export default function Header({InlineText}) {
   const [showSignIn, setShowSignIn] = useState(false)
   return (
     <div className={styles.Container}>
