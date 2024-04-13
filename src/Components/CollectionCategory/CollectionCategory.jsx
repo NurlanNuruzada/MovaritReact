@@ -7,6 +7,9 @@ export default function CollectionCategory({ img, CategoryName }) {
             <div className={Styles.CategoryName}>
                 {CategoryName}
             </div>
+            <div className={Styles.Category}>
+                {CategoryName}
+            </div>
         </div>
     )
 }

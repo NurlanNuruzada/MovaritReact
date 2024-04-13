@@ -4,7 +4,7 @@ import Image from '../../../../Images/Section1.png';
 export default function Section2() {
     return (
         <div >
-            <div className={Styles.MainContent}>
+            {/* <div className={Styles.MainContent}>
                 <img className={Styles.LeftImage} src={Image} alt="" srcset="" />
                 <div className={Styles.InformationContainer}>
                     <h1>100K</h1>
@@ -27,7 +27,7 @@ export default function Section2() {
                         <p>QUALITY</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

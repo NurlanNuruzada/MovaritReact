@@ -1,3 +1,6 @@
+.Main{
+    padding: 0 0 0 64px;
+}
 .TitleContainer h1 {
     font-family: Poppins;
     font-size: 34px;
@@ -31,11 +34,39 @@
 }
 
 .TitleContainer {
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 28px;
 }
-.SliderItem{
-    margin-left: 36px;
+
+.SliderItem {
+    margin: 0 !important;
+    width: max-content !important;
+    margin-right: 32px !important;
+}
+
+@media screen and (max-width:1051px) {
+    .TitleContainer h1 {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .SeeAllContainer p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+    }
+    .TitleContainer {
+        padding-top: 64px;
+    }
+    .Main{
+        padding: 0 0 0 24px;
+    }
 }
