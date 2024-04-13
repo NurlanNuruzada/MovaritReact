@@ -56,6 +56,9 @@
 }
 
 @media screen and (max-width:1051px) {
+    .MainContainer{
+        padding: 0;
+    }
     .TitleContainer h1 {
         font-family: Poppins;
         font-size: 24px;
