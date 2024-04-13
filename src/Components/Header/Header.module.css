@@ -20,6 +20,10 @@
 .PaddingContainer {
     margin: 0 62px;
 }
+.Container2 {
+    margin: auto;
+    max-width: 1440px;
+}
 
 .MainContainer h1 {
     font-family: Poppins;
@@ -195,3 +199,4 @@
 .Buttons {
     cursor: pointer;
 }
+
