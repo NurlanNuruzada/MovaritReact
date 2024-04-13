@@ -1,3 +1,6 @@
+.Main{
+    padding: 71px 50px 0 62px;
+}
 .TitleContainer h1 {
     font-family: Poppins;
     font-size: 34px;
@@ -39,9 +42,10 @@
 .SliderItem{
     margin: 0 !important;
     width: max-content !important;
-    margin-right: 32px !important;
+    margin: 0 16px !important;
 }
-@media screen and (max-width:455px) {
+
+@media screen and (max-width:1051px) {
     .TitleContainer h1 {
         font-family: Poppins;
         font-size: 20px;
@@ -56,5 +60,8 @@
         font-weight: 500;
         line-height: 28px;
         text-align: left;
+    }
+    .Main{
+        padding: 94px 0 0 24px;
     }
 }

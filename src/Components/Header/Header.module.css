@@ -132,7 +132,7 @@
     }
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1051px) {
     .left {
         display: none;
     }
@@ -166,7 +166,7 @@
     }
 }
 
-@media screen and (min-width:1050px) {
+@media screen and (min-width:1051px) {
     .MobileContainer {
         display: none;
     }
