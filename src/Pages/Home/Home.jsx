@@ -8,7 +8,7 @@ import LetsPlay from './HomePageComponents/LetsPlay/LetsPlay'
 
 export default function Home() {
   return (
-    <div>
+    <div style={{backgroundColor: "#FFF9EE"}}>
       <Section1 />
       <Section2 />
       <TrendingArtworksContainer />

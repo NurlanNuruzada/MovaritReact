@@ -46,7 +46,7 @@ export default function CollectionSection() {
                     <img src={Image} alt="" />
                 </div>
             </div>
-            <div className={Styles.FlexContainer} spacing='40px'>
+            <div className={`${Styles.FlexContainer} col-12`}>
                 {[Category1, Category2, Category3, Category4, Category5, Category6].map((category, index) => (
                     <CollectionCategory img={category} CategoryName={"Modern Minimalist"} />
                 ))}

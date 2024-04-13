@@ -1,5 +1,5 @@
 .Main {
-    width: 420px;
+    width: 480px;
     height: 284px;
     border-radius: 16px;
     display: flex;
@@ -41,9 +41,10 @@
 }
 
 @media screen and (max-width:1051px) {
-    .CategoryName{
+    .CategoryName {
         display: none;
     }
+
     .Main {
         margin-right: 24px;
         width: 266px;
@@ -76,4 +77,22 @@
 .Category {
     display: none;
 
+}
+
+@media (min-width: 1200px) {
+    .Main {
+        width: 360px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .Main {
+        width: 420px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .Main {
+        width: 512px;
+    }
 }
