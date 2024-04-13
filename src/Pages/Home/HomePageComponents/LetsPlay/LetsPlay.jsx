@@ -8,18 +8,18 @@ export default function LetsPlay() {
   return (
     <div className={` container-fluid d-flex flex-column ${Styles.Main}`}>
       <h3 className='mb-1'>Let's Play</h3>
-      <div className='d-flex mt-4 flex-column flex-md-row'>
-        <div className={`${Styles.PhotoFrameWrapper} col-6 d-flex flex-column justify-content-center align-items-center position-relative`}>
+      <div className='d-flex mt-4 flex-column flex-sm-row'>
+        <div className={`${Styles.PhotoFrameWrapper} col-12 col-md-6 d-flex flex-column justify-content-center align-items-center position-relative`}>
           <button className={`${Styles.LikeBtn} position-absolute top-0 end-0 btn btn-like rounded-circle`}><img src={HeartIcon} /></button>
           <span className={`${Styles.PhotoFrame} col-6 mb-3`}>
             <img className={Styles.Photo} src={letsPlayImg} alt="" />
           </span>
           <button className='btn btn-main mt-3'>Surprise Me</button>
         </div>
-        <div className='col-6 ms-5 d-flex justify-content-center align-items-center'>
+        <div className='col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0 ps-md-5'>
           <Card.Body>
             <Card.Title className={`${Styles.CardTitle}`}>Nous n'avons pas de crédit sur le temps</Card.Title>
-            <Card.Text className={`${Styles.CardText} my-4`}>
+            <Card.Text className={`${Styles.CardText} my-3 my-md-4`}>
               In this acrylic work, I have merged cubism, expressionism and impressionism to capture a mosaic of emotions. Intertwined geometric shapes and vibrant colors tell a story of human complexity.
             </Card.Text>
             <Card.Subtitle className={`${Styles.CardSubtitle} mb-2`}>
@@ -27,7 +27,7 @@ export default function LetsPlay() {
               <span className='mx-2'>•</span>
               <span>Acrylic on Canvas, 79x79in</span>
             </Card.Subtitle>
-            <Card.Text className={`${Styles.CardPrice} mt-4`}>
+            <Card.Text className={`${Styles.CardPrice} mt-2 mt-md-4`}>
               $15,670
             </Card.Text>
           </Card.Body>

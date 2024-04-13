@@ -61,3 +61,20 @@
         padding: 64px 24px;
     }
 }
+
+@media (max-width:576px) {
+
+    .CardTitle,
+    .CardPrice {
+        font-size: 1.5rem;
+    }
+
+    .CardSubtitle {
+        font-size: 1rem;
+    }
+
+    .CardText {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
