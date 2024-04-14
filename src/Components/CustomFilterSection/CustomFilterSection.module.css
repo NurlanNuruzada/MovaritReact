@@ -1,0 +1,53 @@
+.IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    gap: 22px;
+    border-radius: 91.67px;
+    background: rgba(170, 142, 110, 0.7);
+    min-width: 52px;
+    min-height: 52px;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.Container2 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+@media screen and (max-width: 1051px) {
+    .Main {
+        padding: 24px 0;
+    }
+}
+
+
+.ClearAll {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(43, 44, 46, 1);
+}
+
+@media screen and (max-width: 1051px) {
+    .Container2 {
+        display: none !important;
+    }
+
+}

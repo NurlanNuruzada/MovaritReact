@@ -1,0 +1,29 @@
+.Main p {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(43, 44, 46, 1);
+    padding-top: 12px;
+}
+
+.Main {
+    margin: auto;
+    padding: 52px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 443px;
+}
+
+@media screen and (max-width:1051px) {
+    .Main p {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: center;
+    }
+}

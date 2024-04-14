@@ -3,7 +3,8 @@ import Styles from './Section1.module.css'
 import Image from '../../../../../Images/BackgroundImage/Group 85.png';
 import Background from '../../../../../Images/BackgroundImage/image 114.png';
 import NavigateOptions from '../../../../../Components/NavigateOptions/NavigateOptions';
-import Filter from '../Filters/Filter';
+import Filter from '../../../../../Components/Filters/Filter';
+import CustomFilterSection from '../../../../../Components/CustomFilterSection/CustomFilterSection';
 
 export default function Section1() {
     const [width, setWidth] = useState(window.innerWidth);
@@ -20,7 +21,7 @@ export default function Section1() {
         return width;  // This is the getter for the current window width
     }
     useWindowWidth()
-    const Sellections=["All","Recomended","Mostly Viewed","RecentlyAdded"]
+
     return (
         <div className={Styles.MainContainer}>
             <img className={width > 440 ? Styles.Section1Image : Styles.Section2Image} src={width > 440 ? Image : Background} alt="" />
@@ -28,7 +29,7 @@ export default function Section1() {
                 <h1>Discover Art world</h1>
                 <NavigateOptions />
             </div>
-            <Filter SellectOptions={Sellections} />
+
         </div>
     )
 }

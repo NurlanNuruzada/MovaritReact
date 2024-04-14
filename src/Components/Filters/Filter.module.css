@@ -1,0 +1,33 @@
+.Option {
+    padding: 6px 22px;
+    border-radius: 100px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+}
+
+.OptionSelected {
+    background: rgba(255, 249, 238, 1);
+    color: rgba(150, 115, 77, 1);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 6px 22px !important;
+}
+
+.OptionContainer {
+    width: max-content;
+    height: max-content;
+    top: 579px;
+    left: 401px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background: rgba(170, 142, 110, 0.7);
+    color: white;
+    margin: 40px auto 0 auto;
+}
