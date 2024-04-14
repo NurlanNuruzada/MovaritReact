@@ -5,7 +5,10 @@ import TrendingArtworksContainer from './HomePageComponents/TrendingArtworks/Tre
 import CollectionSection from './HomePageComponents/CollectionSection/CollectionSection'
 import TrendingCollection from './HomePageComponents/NewCollection/NewCollection'
 import LetsPlay from './HomePageComponents/LetsPlay/LetsPlay'
+import LatestBlogs from './HomePageComponents/LatestBlogs/LatestBlogs'
+import Testimonials from './HomePageComponents/Testimonials/Testimonials'
 import Styles from './Home.module.scss'
+
 export default function Home() {
   return (
     <div className={Styles.MainContainerHome}>
@@ -16,6 +19,8 @@ export default function Home() {
         <CollectionSection />
         <TrendingCollection />
         <LetsPlay />
+        <LatestBlogs />
+        <Testimonials />
       </div>
     </div>
   )

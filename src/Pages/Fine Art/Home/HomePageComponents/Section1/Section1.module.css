@@ -33,7 +33,7 @@
 
 .ClippedBgWrapper {
     position: absolute;
-    bottom: -173px;
+    bottom: -2px;
 }
 
 @media screen and (max-width:950px) {

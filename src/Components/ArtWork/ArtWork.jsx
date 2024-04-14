@@ -7,7 +7,7 @@ export default function ArtWork({Image,ArtPrice,ArtDes,ArtName}) {
     return (
         <div className={Styles.Main}>
             <button className={`${Styles.LikeBtn} position-absolute top-0 end-0 btn btn-like rounded-circle`}><img src={HeartIcon} /></button>
-            <div><img src={Image} alt="" srcset="" /></div>
+            <div><img className={`${Styles.CardImg}`} src={Image} alt="" srcset="" /></div>
             <div>
                 <h1 className={Styles.ArtName}>{ArtName}</h1>
                 <p className={Styles.ArtDes}>{ArtDes}</p>

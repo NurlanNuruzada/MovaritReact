@@ -1,0 +1,24 @@
+.CardBody {
+    width: 505px;
+    height: 300px;
+    border: 1px solid rgba(220, 199, 176, 0.3);
+    background-color: #FDFDFD;
+}
+
+.CardTitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000;
+}
+
+.CardText, .CardSubtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #010011;
+}
+
+.CardSubtitle {
+    color: #737376;
+}
