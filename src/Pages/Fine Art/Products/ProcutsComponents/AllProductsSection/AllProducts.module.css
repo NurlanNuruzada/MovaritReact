@@ -1,0 +1,65 @@
+.Main {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    row-gap: 44px;
+    padding-bottom: 56px;
+}
+
+.LoadMoreButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoadMoreButtonContainer button {
+    padding: 12px 22px 12px 26px;
+    gap: 10px;
+    border-radius: 48px;
+    background: rgba(150, 115, 77, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 665px) {
+    .Main {
+        grid-template-columns: repeat(3, 0fr);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 838px) {
+    .Main {
+        grid-template-columns: repeat(4, 0fr);
+    }
+}
+
+@media (min-width: 939px) {
+    .Main {
+        grid-template-columns: repeat(4, 0fr);
+        gap: 17px;
+    }
+}
+
+@media (min-width: 1104px) {
+    .Main {
+        grid-template-columns: repeat(3, 0fr);
+        gap: 30px;
+        row-gap: 56px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .Main {
+        gap: 28px;
+        row-gap: 56px;
+        grid-template-columns: repeat(4, 0fr);
+    }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Styles from './NavigateOptions.module.css'
 
-export default function NavigateOptions() {
+export default function NavigateOptions() { 
     const [selectedOption, setSelectedOption] = useState("Fine Art");
     return (
         <div className={Styles.OptionContainer}>
