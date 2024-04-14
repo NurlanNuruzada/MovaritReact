@@ -1,0 +1,97 @@
+.TitleContainer h1 {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(43, 44, 46, 1);
+    margin: 0;
+}
+
+.SeeAllContainer {
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+.SeeAllContainer p {
+    gap: 10px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(43, 44, 46, 1);
+
+}
+
+.SeeAllContainer img {
+    width: 24px;
+    height: 24px;
+}
+
+.TitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+
+.SliderItem {
+    margin: 0 !important;
+    width: max-content !important;
+    margin: 0 16px !important;
+}
+
+@media screen and (max-width:1051px) {
+    .TitleContainer h1 {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .SeeAllContainer p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+
+.PaddingSecttings {
+    padding-right: 25px;
+}
+
+@media screen and (max-width:1051px) {
+    .PaddingSecttings {
+        padding-right: 20px;
+    }
+}
+
+.UserInfoContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ImageContainer {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.ImageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1051px) {
+    .ImageContainer {
+        width: 46px;
+        height: 46px;
+    }
+}
