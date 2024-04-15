@@ -30,11 +30,12 @@
 .Main {
     width: 308px;
     height: max-content;
+    position: relative;
 }
 
-.Main img {
+.CardImg {
     width: 100%;
-    height: 344px;
+    height: 450px !important;
     border-radius: 12px;
 }
 
@@ -45,11 +46,11 @@
 
 @media screen and (max-width:1051px) {
     .Main img {
-        height: 173px;
+        height: 224px;
     }
 
     .Main {
-        width: 164px;
+        width: 186px;
         height: max-content;
     }
 

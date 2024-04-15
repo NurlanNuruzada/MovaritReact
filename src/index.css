@@ -75,6 +75,23 @@ p {
     align-items: center;
 }
 
+.btn-like-dark {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #59595999;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #595959;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #939393;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #CBCBCB;
+    --bs-btn-disabled-border-color: transparent;
+}
+
 .btn-main {
     --bs-btn-color: #fff;
     --bs-btn-bg: #96734D;
@@ -206,12 +223,12 @@ a.btn-main {
     box-shadow: 0 0 0 0.0625rem #C6B097;
 }
 
-.TestimonialsSwiper{
+.TestimonialsSwiper {
     user-select: none;
     padding-top: 64px;
 }
 
-.TestimonialsSwiper .swiper-slide:not(.swiper-slide-active)  {
+.TestimonialsSwiper .swiper-slide:not(.swiper-slide-active) {
     filter: blur(2px);
     transition: transform 0.3s ease;
     transform: scale(0.8);

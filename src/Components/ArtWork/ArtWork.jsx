@@ -1,25 +1,25 @@
 import React from 'react';
-import Styles from './ArtWork.module.css';
-import Styles2 from './ArtWorkStyle2.module.css';
+import Light from './ArtWorkLight.module.css';
+import Dark from './ArtWorkDark.module.css';
 import HeartIcon from '../../Images/Heart.svg';
 
-export default function ArtWork({ Image, ArtPrice, ArtDes, ArtName, StylesName }) {
-    // Determine which style module to use based on StylesName prop
-    const currentStyles = StylesName === 'style2' ? Styles2 : Styles;
-
+export default function ArtWork({ Image, ArtPrice, ArtDes, ArtName, theme }) {
+    // Determine which style module to use based on theme prop
+    const currentTheme = theme === 'dark' ? Dark : Light;
+    console.log(currentTheme);
     return (
-        <div className={currentStyles.Main}>
-            <button className={`${currentStyles.LikeBtn} position-absolute top-0 end-0 btn btn-like rounded-circle`}>
+        <div className={currentTheme.Main}>
+            <button className={`${currentTheme.LikeBtn} ${theme == "dark" && "btn-like-dark"} position-absolute top-0 end-0 btn btn-like rounded-circle`}>
                 <img src={HeartIcon} alt="Like" />
             </button>
             <div>
-                <img src={Image} alt="" />
+                <img className={currentTheme.CardImg} src={Image} alt="" />
             </div>
             <div>
-                <h1 className={currentStyles.ArtName}>{ArtName}</h1>
-                <p className={currentStyles.ArtDes}>{ArtDes}</p>
+                <h1 className={currentTheme.ArtName}>{ArtName}</h1>
+                <p className={currentTheme.ArtDes}>{ArtDes}</p>
             </div>
-            <p className={currentStyles.ArtPrice}>{ArtPrice}</p>
+            <p className={currentTheme.ArtPrice}>{ArtPrice}</p>
         </div>
     );
 }
