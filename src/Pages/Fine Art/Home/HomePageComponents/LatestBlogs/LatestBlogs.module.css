@@ -47,7 +47,18 @@
     margin: 0 16px !important;
 }
 
-@media screen and (max-width:1051px) {
+
+.PaddingSettings {
+    padding-right: 25px;
+}
+
+@media screen and (max-width:512px) {
+    .SliderWrapper{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:1200px) {
     .TitleContainer h1 {
         font-family: Poppins;
         font-size: 20px;
@@ -65,16 +76,11 @@
     }
 
     .Main {
-        padding: 94px 0 0 24px;
+        padding: 94px 24px 0 24px;
     }
-}
 
-.PaddingSettings {
-    padding-right: 25px;
-}
-
-@media screen and (max-width:1051px) {
     .PaddingSettings {
-        padding-right: 32px;
+        padding-right: 19px;
+        padding-left: 19px;
     }
 }

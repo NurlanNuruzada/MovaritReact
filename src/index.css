@@ -180,6 +180,15 @@ a.btn-main {
     color: #fff;
 }
 
+.social-media-link-reverse {
+    color: #FFF;
+    background-color: #AA8E6EB3;
+}
+
+.social-media-link-reverse:hover {
+    background-color: #AA8E6E;
+}
+
 .form-check-input {
     --bs-form-check-bg: transparent;
     --bs-border-color: #96734D;
@@ -195,4 +204,15 @@ a.btn-main {
     border-color: #C6B097;
     outline: 0;
     box-shadow: 0 0 0 0.0625rem #C6B097;
+}
+
+.TestimonialsSwiper{
+    user-select: none;
+    padding-top: 64px;
+}
+
+.TestimonialsSwiper .swiper-slide:not(.swiper-slide-active)  {
+    filter: blur(2px);
+    transition: transform 0.3s ease;
+    transform: scale(0.8);
 }

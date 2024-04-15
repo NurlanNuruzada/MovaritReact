@@ -26,7 +26,7 @@ export default function TrendingArtworksContainer() {
                     <img src={Image} alt="" srcset="" />
                 </div>
             </div>
-            <div>
+            <div className={Styles.SliderWrapper}>
                 <Slider {...settings}>
                     <div className={Styles.PaddingSettings}>
                         <BlogCard Type={"Art Interview"} Image={CheckerImage} Title={"The Minimalist Mastery of McCain McMurray"} Text={"Paige Simianer"} Date={"March 13, 2024"} Link={"#"} />

@@ -64,3 +64,17 @@
     transform: rotate(45deg);
     color: #2B2C2E;
 }
+
+@media screen and (max-width:512px) {
+    .CardImg {
+        width: 380px;
+        height: 540px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .CardImg {
+        width: 340px;
+        height: 540px;
+    }
+}
