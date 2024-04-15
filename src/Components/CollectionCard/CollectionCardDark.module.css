@@ -1,0 +1,65 @@
+.Main {
+    width: 532px;
+    height: max-content;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Main h1 {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #F0F0F0;
+    padding-top: 16px;
+    margin: 0;
+}
+
+.Main p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    color: #CBCBCB;
+}
+
+.ImageContainer {
+    width: 532px;
+    height: 431px;
+    border-radius: 20px;
+}
+
+.ImageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:1051px) {
+    .ImageContainer {
+        flex-direction: column;
+        width: 266px;
+        height: 191px;
+    }
+
+    .Main {
+        width: 266px;
+    }
+
+    .Main h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+    }
+
+    .Main p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+    }
+}

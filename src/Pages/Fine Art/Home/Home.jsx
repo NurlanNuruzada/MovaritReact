@@ -7,20 +7,23 @@ import TrendingCollection from './HomePageComponents/NewCollection/NewCollection
 import LetsPlay from './HomePageComponents/LetsPlay/LetsPlay'
 import LatestBlogs from './HomePageComponents/LatestBlogs/LatestBlogs'
 import Testimonials from './HomePageComponents/Testimonials/Testimonials'
-import Styles from './Home.module.scss'
+import Light from './HomeLight.module.scss'
+import Dark from './HomeDark.module.scss'
 
-export default function Home() {
+export default function Home({ theme }) {
+  const currentTheme = theme === 'dark' ? Dark : Light;
+  console.log(theme)
   return (
-    <div className={Styles.MainContainerHome}>
-      <Section1 />
-      <div className={Styles.Component}>
-        <Section2 />
-        <TrendingArtworksContainer />
-        <CollectionSection />
-        <TrendingCollection />
-        <LetsPlay />
-        <LatestBlogs />
-        <Testimonials />
+    <div className={currentTheme.MainContainerHome}>
+      <Section1 theme={theme} />
+      <div className={currentTheme.Component}>
+        <Section2 theme={theme} />
+        <TrendingArtworksContainer theme={theme} />
+        <CollectionSection theme={theme} />
+        <TrendingCollection theme={theme} />
+        <LetsPlay theme={theme} />
+        <LatestBlogs theme={theme} />
+        <Testimonials theme={theme} />
       </div>
     </div>
   )

@@ -31,6 +31,15 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.ClippedBgWrapper {
+    position: absolute;
+    bottom: -2px;
+}
+
+.ClippedBgWrapper img {
+    filter: invert(96%) sepia(73%) saturate(410%) hue-rotate(296deg) brightness(103%) contrast(111%);
+    transition: filter 0.3s ease;
+}
 
 @media screen and (max-width:950px) {
     .TextContainer h1 {
@@ -81,17 +90,13 @@
     padding: 12px 16px;
     border-radius: 100px;
     cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease-in;
 }
 
 .OptionSelected {
-    font-weight: 600;
     padding: 12px 16px 12px 16px;
     gap: 10px;
     border-radius: 100px;
     opacity: 0px;
     background: rgba(255, 249, 238, 1);
     color: rgba(150, 115, 77, 1);
-    transition: background-color 0.3s ease-in;
 }

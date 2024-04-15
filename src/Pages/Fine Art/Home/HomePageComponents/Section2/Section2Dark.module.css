@@ -1,0 +1,125 @@
+.MainWrapper {
+    position: relative;
+    padding-left: 62px;
+}
+
+.LeftImage {
+    width: 336px;
+    height: 143px;
+    top: 789px;
+    left: 62px;
+    border-radius: 12px;
+}
+
+.TextSpan {
+    position: absolute;
+    display: block;
+    color: #F0F0F0;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 336px;
+    bottom: 172px;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 432px);
+}
+
+.MainContent {
+    margin-top: 2.5rem;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+
+.InformationContainer {
+    display: flex;
+    align-items: center;
+}
+
+.InformationContainer h1 {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: left;
+    color: #F0F0F0;
+}
+
+.InformationContainer p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #F0F0F0;
+}
+
+.InfoContainer {
+    padding: 12px 0 12px 12px;
+}
+
+@media screen and (min-width:1600px) {
+    .TextSpan {
+        left: -235px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .Container {
+        width: 100%;
+    }
+
+    .TextSpan {
+        color: #F0F0F0;
+        font-size: 14px;
+        width: 270px;
+        bottom: 185px;
+    }
+    
+    .MainContent {
+        flex-direction: column;
+        padding-bottom: 0;
+        height: max-content;
+    }
+
+    .MainWrapper {
+        padding: 24px !important;
+    }
+
+    .LeftImage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .InformationContainer h1 {
+        font-family: Poppins;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .InformationContainer p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .InfoContainer {
+        padding: 0 !important;
+    }
+
+    .InformationContainer {
+        flex-direction: column;
+    }
+}

@@ -15,10 +15,24 @@ export default function Routes() {
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <Home theme={"light"} />,
         },
         {
           path: "/Products",
+          element: <Products />,
+        }
+      ],
+    },
+    {
+      path: "/dark",
+      element: <MainLayout />,
+      children: [
+        {
+          path: "/dark",
+          element: <Home theme={"dark"} />,
+        },
+        {
+          path: "/dark/Products",
           element: <Products />,
         }
       ],

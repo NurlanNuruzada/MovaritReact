@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import Styles from '../Section2/Section2.module.css'
+import Light from '../Section2/Section2Light.module.css'
+import Dark from '../Section2/Section2Dark.module.css'
 import Image from '../../../../../Images/Section1.png';
 import Background from '../../../../../Images/Section2.jpg';
 
-export default function Section2() {
+export default function Section2({theme}) {
+    const currentTheme = theme === 'dark' ? Dark : Light;
     const [width, setWidth] = useState(window.innerWidth);
     function useWindowWidth() {
         useEffect(() => {
@@ -19,30 +21,30 @@ export default function Section2() {
     }
     useWindowWidth()
     return (
-        <div className={`${Styles.MainWrapper}`}>
-            <div className={Styles.MainContent}>
-            <span className='position-relative'>
-                    <span className={Styles.TextSpan}>Welcome to Morvarid, where art meets passion. Explore our curated collection of breathtaking artworks</span>
-                    <img className={Styles.LeftImage} src={width > 440 ? Image : Background} alt="" />
+        <div className={`${currentTheme.MainWrapper}`}>
+            <div className={currentTheme.MainContent}>
+                <span className='position-relative'>
+                    <span className={currentTheme.TextSpan}>Welcome to Morvarid, where art meets passion. Explore our curated collection of breathtaking artworks</span>
+                    <img className={currentTheme.LeftImage} src={width > 440 ? Image : Background} alt="" />
                 </span>
-                <div className={Styles.Container}>
-                    <div className={Styles.InformationContainer}>
+                <div className={currentTheme.Container}>
+                    <div className={currentTheme.InformationContainer}>
                         <h1>100K</h1>
-                        <div className={Styles.InfoContainer}>
+                        <div className={currentTheme.InfoContainer}>
                             <p>HAPPY</p>
                             <p>CUSTOMERS</p>
                         </div>
                     </div>
-                    <div className={Styles.InformationContainer}>
+                    <div className={currentTheme.InformationContainer}>
                         <h1>100K</h1>
-                        <div className={Styles.InfoContainer}>
+                        <div className={currentTheme.InfoContainer}>
                             <p>GLOBAL</p>
                             <p>PARTNERS</p>
                         </div>
                     </div>
-                    <div className={Styles.InformationContainer}>
+                    <div className={currentTheme.InformationContainer}>
                         <h1>100%</h1>
-                        <div className={Styles.InfoContainer}>
+                        <div className={currentTheme.InfoContainer}>
                             <p>HIGH</p>
                             <p>QUALITY</p>
                         </div>

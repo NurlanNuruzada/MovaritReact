@@ -1,6 +1,11 @@
-.Main{
-    padding: 71px 50px 0 62px;
+.Main {
+    padding: 0 0 0 64px;
 }
+
+.SeeAllIcon {
+    font-size: 24px;
+}
+
 .TitleContainer h1 {
     font-family: Poppins;
     font-size: 34px;
@@ -34,15 +39,17 @@
 }
 
 .TitleContainer {
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 28px;
 }
-.SliderItem{
+
+.SliderItem {
     margin: 0 !important;
     width: max-content !important;
-    margin: 0 16px !important;
+    margin-right: 32px !important;
 }
 
 @media screen and (max-width:1051px) {
@@ -53,7 +60,7 @@
         line-height: 32px;
         text-align: left;
     }
-    
+
     .SeeAllContainer p {
         font-family: Poppins;
         font-size: 18px;
@@ -61,16 +68,22 @@
         line-height: 28px;
         text-align: left;
     }
-    .Main{
-        padding: 94px 0 0 24px;
+
+    .TitleContainer {
+        padding-top: 64px;
+    }
+
+    .Main {
+        padding: 0 0 0 24px;
     }
 }
-.PaddingSecttings {
-    padding-right: 25px;
+
+.PaddingSettings {
+    padding-right: 36px;
 }
 
 @media screen and (max-width:1051px) {
-    .PaddingSecttings {
-        padding-right: 32px;
+    .PaddingSettings {
+        padding-right: 24px;
     }
 }

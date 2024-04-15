@@ -1,8 +1,11 @@
 import React from 'react'
-import Styles from './TrendingArtworksContainer.module.css'
+import Light from './TrendingArtworksContainerLight.module.css'
+import Dark from './TrendingArtworksContainerDark.module.css'
 import Image from '../../../../../Images/arrow-right.svg'
 import ArtWork from '../../../../../Components/ArtWork/ArtWork';
 import CheckerImage from '../../../../../Images/checker.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
@@ -10,14 +13,15 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-export default function TrendingArtworksContainer() {
+export default function TrendingArtworksContainer({theme}) {
+    const currentTheme = theme === 'dark' ? Dark : Light;
     return (
-        <div className={Styles.Main}>
-            <div className={Styles.TitleContainer}>
+        <div className={currentTheme.Main}>
+            <div className={currentTheme.TitleContainer}>
                 <h1>Trending Artworks</h1>
-                <div className={Styles.SeeAllContainer}>
+                <div className={currentTheme.SeeAllContainer}>
                     <p>See all</p>
-                    <img src={Image} alt="" srcset="" />
+                    <FontAwesomeIcon className={`${currentTheme.SeeAllIcon} ms-2`} icon={faArrowRightLong} />
                 </div>
             </div>
             <div>
@@ -39,19 +43,19 @@ export default function TrendingArtworksContainer() {
                     }}
                 >
                     <SwiperSlide>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <ArtWork theme={theme} ArtPrice={"$ 2,0002"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <ArtWork theme={theme} ArtPrice={"$ 2,0003"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <ArtWork theme={theme} ArtPrice={"$ 2,0004"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <ArtWork theme={theme} ArtPrice={"$ 2,0005"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
                     </SwiperSlide>
                 </Swiper>
             </div>
