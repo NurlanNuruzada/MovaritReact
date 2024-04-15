@@ -33,30 +33,39 @@ export default function TrendingArtworksContainer({theme}) {
                     className="trendingArtWorks"
                     breakpoints={{
                         768: {
-                            slidesPerView: 1,
-                            spaceBetween: 25
+                            slidesPerView:4,
                         },
                         1051: {
                             slidesPerView: 4,
-                            spaceBetween: 32
                         }
                     }}
                 >
-                    <SwiperSlide>
-                        <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
+                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <ArtWork theme={theme} ArtPrice={"$ 2,0002"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
+                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <ArtWork theme={theme} ArtPrice={"$ 2,0003"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
+                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <ArtWork theme={theme} ArtPrice={"$ 2,0004"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
+                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <ArtWork theme={theme} ArtPrice={"$ 2,0005"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
+                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
+                   
                 </Swiper>
             </div>
         </div>

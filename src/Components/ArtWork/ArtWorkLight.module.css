@@ -35,7 +35,7 @@
 
 .CardImg {
     width: 100%;
-    height: 450px !important;
+    height: 450px;
     border-radius: 12px;
 }
 
@@ -45,13 +45,13 @@
 }
 
 @media screen and (max-width:1051px) {
-    .Main img {
-        height: 224px;
+    .CardImg {
+        height: 224px !important;
     }
 
     .Main {
-        width: 186px;
-        height: max-content;
+        width: 186px !important;
+        height: 370px !important;
     }
 
     .ArtName {

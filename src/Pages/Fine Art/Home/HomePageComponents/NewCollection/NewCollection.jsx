@@ -17,9 +17,10 @@ export default function TrendingCollection({ theme }) {
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
-        swipeToSlide: true,  // Allows users to swipe directly to any slide
-        variableWidth: true, // Each slide can have variable width
+        swipeToSlide: true,  
+        variableWidth: true, 
         arrows: false,
+        freeScroll: true
     };
     return (
         <div className={currentTheme.Main}>
