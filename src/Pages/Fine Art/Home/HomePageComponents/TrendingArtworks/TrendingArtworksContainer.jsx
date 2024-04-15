@@ -29,30 +29,39 @@ export default function TrendingArtworksContainer() {
                     className="trendingArtWorks"
                     breakpoints={{
                         768: {
-                            slidesPerView: 1,
-                            spaceBetween: 25
+                            slidesPerView:4,
                         },
                         1051: {
                             slidesPerView: 4,
-                            spaceBetween: 32
                         }
                     }}
                 >
-                    <SwiperSlide>
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
                         <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
                         <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
                         <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
                         <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
-                    <SwiperSlide>
+                        <SwiperSlide className={Styles.Slider}>
+                         <div className={Styles.SliderPadding}>
                         <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                    </div >
                     </SwiperSlide>
+                   
                 </Swiper>
             </div>
         </div>

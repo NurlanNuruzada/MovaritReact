@@ -1,6 +1,7 @@
-.Main{
+.Main {
     padding: 71px 50px 0 62px;
 }
+
 .TitleContainer h1 {
     font-family: Poppins;
     font-size: 34px;
@@ -39,7 +40,8 @@
     justify-content: space-between;
     padding-bottom: 28px;
 }
-.SliderItem{
+
+.SliderItem {
     margin: 0 !important;
     width: max-content !important;
     margin: 0 16px !important;
@@ -53,7 +55,7 @@
         line-height: 32px;
         text-align: left;
     }
-    
+
     .SeeAllContainer p {
         font-family: Poppins;
         font-size: 18px;
@@ -61,10 +63,12 @@
         line-height: 28px;
         text-align: left;
     }
-    .Main{
+
+    .Main {
         padding: 94px 0 0 24px;
     }
 }
+
 .PaddingSecttings {
     padding-right: 25px;
 }
@@ -73,4 +77,19 @@
     .PaddingSecttings {
         padding-right: 32px;
     }
+}
+
+.Slider {
+    min-width: max-content !important;
+    width: max-content !important;
+}
+
+.SliderWrapper>div {
+    gap: 50px !important;
+    padding-left: 20px !important;
+    width: max-content !important;
+}
+.SliderPadding{
+    padding-right: 28px;
+
 }

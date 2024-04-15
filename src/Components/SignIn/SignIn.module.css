@@ -10,9 +10,17 @@
     font-size: 34px;
 }
 
-.regBtn{
+.regBtn {
     font-size: 1.125rem;
     color: #000D2F;
+}
+
+.Icon {
+    width: 26px !important;
+    height: 25px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .regBtn a {
@@ -24,4 +32,42 @@
     .modalContent {
         width: 100%;
     }
+}
+
+.IconContainer {
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.Or {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+}
+
+.regBtn {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+.Up {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+}
+
+.Forget {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
 }
