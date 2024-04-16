@@ -11,7 +11,7 @@ export default function Routes() {
   let routes = [
     {
       path: "/",
-      element: <MainLayout />,
+      element: <MainLayout theme={"light"} />,
       children: [
         {
           path: "/",
@@ -25,7 +25,7 @@ export default function Routes() {
     },
     {
       path: "/dark",
-      element: <MainLayout />,
+      element: <MainLayout theme={"dark"} />,
       children: [
         {
           path: "/dark",

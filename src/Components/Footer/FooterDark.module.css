@@ -1,7 +1,6 @@
 .MainWrapper {
     position: relative;
-    height: 575px;
-    background-color: #F3EEDD;
+    background-color: #1B1B1B;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -9,23 +8,21 @@
 }
 
 .Main {
-    border-top-left-radius: 20px ;
+    border-top-left-radius: 20px;
     padding: 96px 62px 0 62px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1317px;
-
-}
-.MaxWid{
-    max-width: 1440px;
-    margin: auto;
 }
 
 .ClippedImgWrapper {
     position: absolute;
     top: -94px;
     right: 0;
+}
+
+.ClippedImg {
+    filter: invert(0%) sepia(1%) saturate(3710%) hue-rotate(30deg) brightness(100%) contrast(79%);
 }
 
 .LogoText {
@@ -36,6 +33,7 @@
 }
 
 .NewsletterInputWrapper {
+    margin-top: 20px;
     background-color: #fff;
     border-radius: 999px;
     display: flex;
@@ -44,14 +42,13 @@
 
 .Newsletter {
     margin-bottom: 48px;
-    max-width: 393px;
 }
 
 .Newsletter h1 {
     font-weight: 500;
     font-size: 44px;
     line-height: 64px;
-    color: #805E39;
+    color: #E9E9E9;
     margin: 0;
 }
 
@@ -65,6 +62,10 @@
 
 .NewsletterInput:focus {
     z-index: 0 !important;
+}
+
+.FooterCopyright {
+    color: #B1B1B1;
 }
 
 .NewsletterInputBtn {
@@ -91,7 +92,7 @@
 }
 
 .ListWrapper h6 {
-    color: #B1B1B1;
+    color: #939393;
     margin-bottom: 12px;
     font-weight: 400;
     cursor: default;
@@ -105,7 +106,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #2B2C2E;
+    color: #F0F0F0;
 }
 
 .List div span:hover {
@@ -124,13 +125,9 @@
     align-items: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background-color: rgba(170, 142, 110, 0.7);
+    background-color: #59595999;
 }
-.Padding{
-    background-color: #fff;
-    width: 1px;
-    height: 24px;
-}
+
 .FooterOptionsSelect {
     background-color: transparent;
     border: 0;
@@ -152,7 +149,7 @@
 }
 
 .FooterOptionsSelect option {
-    background-color: rgba(170, 142, 110, 0.7);
+    background-color: #606060;
     border-color: transparent;
 }
 
@@ -160,14 +157,14 @@
     height: 62px;
     padding: 18px 0;
     width: 100%;
-    background-color: rgba(192, 169, 141, 0.2);
+    background-color: #292929;
     display: flex;
     justify-content: center;
 }
 
 .FooterLogoStripItem {
     height: 75%;
-    filter: saturate(0) contrast(100);
+    filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .FooterLogoStripItem:nth-child(4) {
@@ -178,10 +175,30 @@
     height: 125%;
 }
 
+.Padding {
+    background-color: #fff;
+    width: 1px;
+    height: 24px;
+}
+
+.FooterOptionsWrapperSocials button,
+.FooterOptionsWrapperSocialsLg button {
+    background-color: #59595999;
+}
+
+.FooterOptionsWrapperSocials button:hover,
+.FooterOptionsWrapperSocialsLg button:hover {
+    background-color: #595959cc;
+}
+
 @media screen and (max-width:1200px) {
 
+    .List div {
+        padding-top: 0;
+    }
+
     .Main {
-        padding: 96px 24px 0 24px;
+        padding: 48px 24px 0 24px;
     }
 
     .Newsletter {
@@ -196,11 +213,8 @@
 
     .ListsWrapper {
         flex-wrap: wrap;
-        gap: 0.25rem;
-    }
-
-    .ListWrapper:nth-of-type(odd){
-        width: 40%;
+        gap: 1.5rem;
+        padding-left: 0.5rem;
     }
 
     .ListWrapper:nth-of-type(2) {
@@ -215,15 +229,15 @@
         justify-content: space-between;
     }
 
-    .FooterOptionsWrapper{
+    .FooterOptionsWrapper {
         order: -1;
     }
 
     .FooterToTopBtn {
-        top: -150% !important;
+        top: -75% !important;
     }
 
-    .FooterOptionsWrapperSocials{
+    .FooterOptionsWrapperSocials {
         order: -2;
     }
 
@@ -232,9 +246,35 @@
         line-height: 40px;
     }
 
+    .NewsletterInput {
+        padding: 0.75rem !important;
+        padding-left: 1.35rem !important;
+    }
+
     .ClippedImgWrapper {
         position: absolute;
         top: -85px;
         right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MainWrapper {
+        align-items: center;
+    }
+
+    .Main {
+        max-width: 512px;
+    }
+
+    .FooterToTopBtn {
+        top: -130% !important;
+        right: -25% !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .FooterToTopBtn {
+        right: -5% !important;
     }
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Light from '../Section2/Section2Light.module.css'
 import Dark from '../Section2/Section2Dark.module.css'
 import Image from '../../../../../Images/Section1.png';
-import Background from '../../../../../Images/Section2.jpg';
+import ImageDark from '../../../../../Images/Section1Dark.png';
 
 export default function Section2({theme}) {
     const currentTheme = theme === 'dark' ? Dark : Light;
@@ -24,7 +24,7 @@ export default function Section2({theme}) {
         <div className={`${currentTheme.MainWrapper}`}>
             <div className={currentTheme.MainContent}>
             <span className='position-relative'>
-                    <img className={currentTheme.LeftImage} src={width > 440 ? Image : Background} alt="" />
+                    <img className={currentTheme.LeftImage} src={theme === 'dark' ? ImageDark : Image} alt="" />
                 </span>
                 <div className={currentTheme.Container}>
                     <div className={currentTheme.InformationContainer}>

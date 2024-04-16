@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Light from './Section1Light.module.css';
 import Dark from './Section1Dark.module.css';
 import Image from '../../../../../Images/Section1.png';
-import Background from '../../../../../Images/mobileBackground.png';
+import ImageDark from '../../../../../Images/Section1Dark.png';
 import NavigateOptions from '../../../../../Components/NavigateOptions/NavigateOptions';
 
 export default function Section1({ theme }) {
@@ -23,7 +23,7 @@ export default function Section1({ theme }) {
   useWindowWidth()
   return (
     <div className={currentTheme.MainContainer}>
-      <img className={currentTheme.Section1Image} src={width > 440 ? Image : Background} alt="" />
+      <img className={currentTheme.Section1Image} src={theme === 'dark' ? ImageDark : Image} alt="" />
       <div className={currentTheme.TextContainer}>
         <h1>Discover Artworks</h1>
         <h1>Beyond Boundaries</h1>

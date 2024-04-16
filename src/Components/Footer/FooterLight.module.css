@@ -1,0 +1,246 @@
+.MainWrapper {
+    position: relative;
+    height: 575px;
+    background-color: #F3EEDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px !important;
+}
+
+.Main {
+    border-top-left-radius: 20px;
+    padding: 96px 62px 0 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ClippedImgWrapper {
+    position: absolute;
+    top: -94px;
+    right: 0;
+}
+
+.ClippedImg {
+    filter: invert(90%) sepia(16%) saturate(314%) hue-rotate(337deg) brightness(107%) contrast(91%);
+
+}
+
+.LogoText {
+    position: absolute;
+    width: 300px;
+    top: 36px;
+    right: 56px;
+}
+
+.NewsletterInputWrapper {
+    background-color: #fff;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+}
+
+.Newsletter {
+    margin-bottom: 48px;
+}
+
+.Newsletter h1 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 64px;
+    color: #805E39;
+    margin: 0;
+}
+
+.NewsletterInput {
+    padding-left: 20px !important;
+    height: 90%;
+    border-radius: 999px 0% 0% 999px !important;
+    border: 0;
+    width: 80%;
+}
+
+.NewsletterInput:focus {
+    z-index: 0 !important;
+}
+
+.NewsletterInputBtn {
+    border-radius: 100px;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    border-radius: 0 999px 999px 0 !important;
+}
+
+.NewsletterInputBtn button {
+    position: absolute;
+    left: -1rem;
+    font-size: 0.75rem;
+    color: #fff;
+    padding: 0.3rem 0.625rem;
+    background-color: #96734D;
+    border-radius: 999px;
+}
+
+.ListsWrapper {
+    gap: 72px;
+    max-width: 588px;
+}
+
+.ListWrapper h6 {
+    color: #B1B1B1;
+    margin-bottom: 12px;
+    font-weight: 400;
+    cursor: default;
+}
+
+.List div {
+    background-color: transparent;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2B2C2E;
+}
+
+.List div span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.FooterToTopBtn {
+    width: 64px !important;
+    height: 64px !important;
+    font-size: 24px !important;
+}
+
+.FooterOptionsWrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #AA8E6EB2;
+}
+
+.FooterOptionsSelect {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+}
+
+.FooterOptionsSelect:hover {
+    cursor: pointer;
+}
+
+.FooterOptionsSelect:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.FooterOptionsSelect option {
+    background-color: #AA8E6EB2;
+    border-color: transparent;
+}
+
+.FooterLogoStripWrapper {
+    height: 62px;
+    padding: 18px 0;
+    width: 100%;
+    background-color: #e8e0cd;
+    display: flex;
+    justify-content: center;
+}
+
+.FooterLogoStripItem {
+    height: 75%;
+    filter: saturate(0) contrast(100);
+}
+
+.FooterLogoStripItem:nth-child(4) {
+    height: 110%;
+}
+
+.FooterLogoStripItem:nth-child(3) {
+    height: 125%;
+}
+
+.Padding {
+    background-color: #fff;
+    width: 1px;
+    height: 24px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .List div {
+        padding-top: 0;
+    }
+
+    .Main {
+        padding: 48px 24px 0 24px;
+    }
+
+    .Newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .MainWrapper {
+        height: auto;
+    }
+
+    .ListsWrapper {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .ListWrapper:nth-of-type(2) {
+        order: 3;
+        width: 100%;
+    }
+
+    .ListWrapper:nth-of-type(2) .List {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .FooterOptionsWrapper {
+        order: -1;
+    }
+
+    .FooterToTopBtn {
+        top: -120% !important;
+    }
+
+    .FooterOptionsWrapperSocials {
+        order: -2;
+    }
+
+    .Newsletter h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .NewsletterInput {
+        padding: 0.75rem !important;
+        padding-left: 1.35rem !important;
+    }
+
+    .ClippedImgWrapper {
+        position: absolute;
+        top: -85px;
+        right: 0;
+    }
+}
