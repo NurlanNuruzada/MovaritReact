@@ -14,14 +14,26 @@
     justify-content: center;
     color: white;
     flex-wrap: wrap;
+    backdrop-filter: blur(8px);
 }
 
 .PaddingContainer {
-    margin: 0 62px;
+    margin: 0 62px !important;
 }
 
 .Container2 {
     margin: auto;
+}
+
+@media screen and (min-width:1440px) {
+    .PaddingContainer {
+        margin: 0;
+    }
+
+    .MenuContainer {
+        max-width: 1450px !important;
+        margin: auto;
+    }
 }
 
 .MainContainer h1 {
@@ -74,6 +86,7 @@
     border-radius: 100px;
     display: flex;
     align-items: center;
+    backdrop-filter: blur(8px);
 }
 
 .selection {
@@ -97,6 +110,7 @@
     justify-content: center;
     border-radius: 91.67px;
     background: #59595999;
+    backdrop-filter: blur(8px);
 }
 
 .Buttons img {

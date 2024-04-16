@@ -278,3 +278,12 @@
         right: -5% !important;
     }
 }
+
+@media (min-width: 1441px) {
+    .Main {
+        min-width: 1440px !important;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+    }
+}

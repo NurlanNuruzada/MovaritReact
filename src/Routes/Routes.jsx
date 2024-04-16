@@ -12,22 +12,22 @@ export default function Routes() {
   let routes = [
     {
       path: "/",
-      element: <MainLayout theme={"light"} />,
+      element: <MainLayout theme={"dark"} />,
       children: [
         {
           path: "/",
-          element: <Home theme={"light"} />,
+          element: <Home theme={"dark"} />,
         },
         {
           path: "/Products",
-          element: <Products />,
+          element: <Products theme={"dark"} />,
         },
         {
           path: "/Moods",
           element: <Moods />,
         },
         {
-          path: "/MoodsColection",
+          path: "/MoodsCollection",
           element: <Moods />,
         }
       ],

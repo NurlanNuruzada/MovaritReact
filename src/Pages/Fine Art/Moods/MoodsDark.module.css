@@ -1,0 +1,319 @@
+.Section1 {
+    background-image: url("../../../Images/BackgroundImage/image 6.png");
+    height: 748px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Section1Info {
+    max-width: 1028px;
+    max-height: 316px;
+    padding: 28px 48px 28px 48px;
+    gap: 4px;
+    border-radius: 52px;
+    background: #595959CC;
+}
+
+.InfoWrapper {
+    padding: 220px 64px;
+}
+
+.Section1 h1 {
+    font-family: Poppins;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: left;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.Section1 p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    color: #F0F0F0;
+}
+
+.Section2 {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #F0F0F0;
+}
+
+.Section2 h1 {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+}
+
+.SlideShowButton {
+    width: 175px;
+    height: 52px;
+    padding: 12px 24px;
+    gap: 10px;
+    border-radius: 100px;
+    background-color: #939393;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SlideShowButton img {
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.SlideShowButton h1 {
+    color: #1C1C1C;
+    margin: 0;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+}
+
+.MainContainer {
+    padding-bottom: 120px;
+    background-color: #111111;
+}
+
+.Main {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: center;
+    align-items: center !important;
+    gap: 17px;
+    row-gap: 44px;
+    padding-bottom: 56px;
+}
+
+.LoadMoreButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoadMoreButtonContainer button {
+    padding: 12px 22px 12px 26px;
+    gap: 10px;
+    border-radius: 48px;
+    background: rgba(150, 115, 77, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 700px) {
+    .Section2 h1 {
+        font-size: 19px;
+    }
+
+    .SlideShowButton {
+        width: 175px;
+        height: 42px;
+        padding: 8px 3px;
+    }
+}
+
+@media (min-width: 702px) {
+    .Main {
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 0fr);
+    }
+
+}
+
+@media (min-width: 838px) {
+    .Main {
+        justify-content: center;
+
+        grid-template-columns: repeat(3, 0fr);
+    }
+}
+
+@media (min-width: 939px) {
+    .Main {
+        justify-content: space-between;
+
+        grid-template-columns: repeat(4, 0fr);
+    }
+}
+
+@media (min-width: 940px) {
+    .Main {
+        justify-content: center;
+        gap: 36px;
+        grid-template-columns: repeat(3, 0fr);
+        row-gap: 56px;
+    }
+}
+
+@media (min-width: 1104px) {
+    .Main {
+        justify-content: center;
+        gap: 36px;
+        grid-template-columns: repeat(3, 0fr);
+        row-gap: 56px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .Main {
+        justify-content: space-between;
+        row-gap: 56px;
+        grid-template-columns: repeat(4, 0fr);
+    }
+
+    .InfoWrapper {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        padding: 220px 0 !important;
+    }
+
+    .SectionContainer {
+        max-width: 1440px;
+        width: 1440px;
+        margin: auto;
+    }
+}
+
+.SectionContainer {
+    width: 100%;
+}
+
+.SectionPadding {
+    padding: 0 64px;
+}
+
+.Section2 {
+    margin: 50px 0;
+}
+
+@media (max-width: 1051px) {
+    .SectionPadding {
+        padding: 0 24px !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .Section1Info {
+        margin-left: 62px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section1Info {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1441px) {
+    .SectionPadding {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1351px) {
+
+
+    .Section1 h1 {
+        max-width: 100%;
+    }
+
+    .Section1 p {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .Section1Info {
+        max-width: 707px;
+        max-height: max-content;
+        top: 308px;
+        left: 24px;
+        padding: 20px 38px;
+    }
+
+    .Section1 h1 {
+        max-width: 100%;
+        font-size: 25px;
+        margin: 0;
+        line-height: 44px;
+    }
+
+    .Section1 p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .Section1Info {
+        max-width: 90%;
+        max-height: max-content;
+        top: 216px;
+        left: 26px;
+        padding: 20px 38px;
+    }
+
+    .InfoWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 200px;
+    }
+
+    .Section1 {
+        height: max-content !important;
+        padding-bottom: 20px;
+    }
+
+    .Section1 h1 {
+        text-align: center;
+        max-width: 100%;
+        font-size: 25px;
+        margin: 0;
+        line-height: 44px;
+    }
+
+    .Section1 p {
+        text-align: center;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .Section1Info {
+        max-width: 90%;
+        max-height: max-content;
+        top: 163px;
+        left: 20px;
+        padding: 20px 38px;
+    }
+
+    .Section1 img {
+        height: 866px !important;
+    }
+}

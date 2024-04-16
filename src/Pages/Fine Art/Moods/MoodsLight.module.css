@@ -81,6 +81,11 @@
     text-align: center;
 }
 
+.MainContainer {
+    padding-bottom: 120px;
+    background-color: #FFF9EE;
+}
+
 .Main {
     display: grid;
     justify-content: space-between;
@@ -110,16 +115,19 @@
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
+
 @media (max-width: 700px) {
-    .Section2 h1{
+    .Section2 h1 {
         font-size: 19px;
     }
-    .SlideShowButton{
+
+    .SlideShowButton {
         width: 175px;
         height: 42px;
         padding: 8px 3px;
     }
 }
+
 @media (min-width: 702px) {
     .Main {
         justify-content: space-between;
@@ -143,6 +151,7 @@
         grid-template-columns: repeat(4, 0fr);
     }
 }
+
 @media (min-width: 940px) {
     .Main {
         justify-content: center;
@@ -181,14 +190,6 @@
         width: 1440px;
         margin: auto;
     }
-
-    .SectionPadding {
-        padding: 0;
-    }
-
-    .SectionPadding {
-        padding: 0 !important;
-    }
 }
 
 .SectionContainer {
@@ -209,13 +210,26 @@
     }
 }
 
-@media (max-width: 1351px) {
+@media (max-width: 1440px) {
     .Section1Info {
-        max-width: 886px;
-        max-height: max-content;
-        top: 296px;
-        left: 62px;
+        margin-left: 62px;
     }
+}
+
+@media (max-width: 768px) {
+    .Section1Info {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1441px) {
+    .SectionPadding {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1351px) {
+
 
     .Section1 h1 {
         max-width: 100%;
@@ -266,7 +280,8 @@
         padding: 0;
         padding-top: 200px;
     }
-    .Section1{
+
+    .Section1 {
         height: max-content !important;
         padding-bottom: 20px;
     }
