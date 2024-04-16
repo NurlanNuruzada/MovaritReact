@@ -16,7 +16,7 @@ export default function NavigateOptions({ theme }) {
                 Fine Art
             </button>
             <button
-                onClick={() => { setSelectedOption('Digital Art'); navigate('/dark'); }}
+                onClick={() => { setSelectedOption('Digital Art'); navigate('/digitalart'); }}
                 className={selectedOption === 'Digital Art' ? currentTheme.OptionSelected : currentTheme.Option}
             >
                 Digital Art

@@ -12,7 +12,6 @@ import Dark from './HomeDark.module.scss'
 
 export default function Home({ theme }) {
   const currentTheme = theme === 'dark' ? Dark : Light;
-  console.log(theme)
   return (
     <div className={currentTheme.MainContainerHome}>
       <Section1 theme={theme} />
