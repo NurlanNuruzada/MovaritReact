@@ -6,6 +6,7 @@ import SignUp from '../Pages/Fine Art/SignUp/SignUp'
 import Home from '../Pages/Fine Art/Home/Home'
 import Products from "../Pages/Fine Art/Products/Products";
 import Moods from "../Pages/Fine Art/Moods/Moods";
+import ArtMoods from "../Pages/Fine Art/ArtMoods/ArtMoods";
 
 export default function Routes() {
   const { token, email } = useSelector((x) => x.auth);
@@ -29,6 +30,10 @@ export default function Routes() {
         {
           path: "/MoodsCollection",
           element: <Moods />,
+        },
+        {
+          path: "/ArtMoods",
+          element: <ArtMoods />,
         }
       ],
     },

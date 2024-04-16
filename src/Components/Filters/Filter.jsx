@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Styles from './Filter.module.css';
 
-export default function Filter({ SellectOptions }) {
-    const [selectedOption, setSelectedOption] = useState("All");
+export default function Filter({ SellectOptions,Default }) {
+    const [selectedOption, setSelectedOption] = useState(Default);
+    console.log(Default);
     return (
             <div className={Styles.OptionContainer}>
                 {SellectOptions.map((value, key) => (

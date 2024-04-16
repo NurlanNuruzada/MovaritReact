@@ -1,17 +1,19 @@
 import React from 'react'
 import Styles from './Products.module.css'
 import Section1 from './ProcutsComponents/Section1/Section1'
-import FilterSection from './ProcutsComponents/FilterSection/FilterSetion'
+import FilterSetion from './ProcutsComponents/FilterSection/FilterSetion'
 import AllProducts from './ProcutsComponents/AllProductsSection/AllProducts'
 import CustomSectionWihtSlider from '../../../Components/CustomSectionWithSlider/CustomSectionWihtSlider'
 import UserCollection from '../../../Components/UserCollections/UserCollection'
 import NotFoundArtSectoin from '../../../Components/NotFoundArtSection/NotFoundArtSectoin'
 export default function Products() {
+    const Sellections = ["All", "Recomended", "Mostly Viewed", "RecentlyAdded"]
+
     return (
         <div className={Styles.Main}>
             <Section1 />
             <div className={Styles.Center}>
-                <FilterSection />
+                <FilterSetion Default={"All"} Sellections={Sellections} />
                 <div className={Styles.Padding}>
                     <NotFoundArtSectoin />
                     <AllProducts />
