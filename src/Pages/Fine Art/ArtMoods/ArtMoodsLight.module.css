@@ -1,0 +1,300 @@
+.Section1 {
+    background-image: url("../../../Images/BackgroundImage/image\ 122.png");
+    background-size: cover;
+    /* Cover the entire area of the container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    height: 576px;
+    width: 100%;
+}
+
+.MainContainer {
+    background-color: rgba(255, 249, 238, 1);
+}
+
+.Section1Info {
+    max-width: 1028px;
+    max-height: 316px;
+    gap: 4px;
+    border-radius: 52px;
+    color: white;
+    max-width: 487px;
+}
+
+.InfoWrapper {
+    padding: 250px 0;
+    padding-left: 64px;
+    max-width: 487px;
+}
+
+.Section1 h1 {
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 84px;
+    text-align: left;
+
+
+}
+
+.Section1 p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+}
+
+.Input {
+    width: 356px !important;
+    height: 44px !important;
+    box-shadow: none;
+    outline: none !important;
+    border: none !important;
+    background: white !important;
+    border-radius: 1000px !important;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.Section2 {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(43, 44, 46, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Section2 h1 {
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+
+}
+
+.Main {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: center;
+    align-items: center !important;
+    gap: 17px;
+    row-gap: 44px;
+    padding-bottom: 56px;
+}
+
+.LoadMoreButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoadMoreButtonContainer button {
+    padding: 12px 22px 12px 26px;
+    gap: 10px;
+    border-radius: 48px;
+    background: rgba(150, 115, 77, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 700px) {
+    .Section2 h1 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 702px) {
+    .Main {
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 0fr);
+    }
+
+}
+
+@media (min-width: 838px) {
+    .Main {
+        justify-content: center;
+
+        grid-template-columns: repeat(3, 0fr);
+    }
+}
+
+@media (min-width: 939px) {
+    .Main {
+        justify-content: space-between;
+
+        grid-template-columns: repeat(4, 0fr);
+    }
+}
+
+@media (min-width: 940px) {
+    .Main {
+        justify-content: center;
+        gap: 36px;
+        grid-template-columns: repeat(3, 0fr);
+        row-gap: 56px;
+    }
+}
+
+@media (min-width: 1104px) {
+    .Main {
+        justify-content: center;
+        gap: 36px;
+        grid-template-columns: repeat(3, 0fr);
+        row-gap: 56px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .Main {
+        justify-content: space-between;
+        row-gap: 56px;
+        grid-template-columns: repeat(3, 0fr);
+    }
+
+    .InfoWrapper {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        padding: 300px 0 !important;
+    }
+
+    .SectionContainer {
+        max-width: 1440px;
+        width: 1440px;
+        margin: auto;
+    }
+
+    .SectionPadding {
+        padding: 0 !important;
+        padding-bottom: 256px !important;
+    }
+}
+
+.SectionContainer {
+    width: 100%;
+}
+
+.SectionPadding {
+    padding: 0 64px;
+}
+
+.Section2 {
+    margin: 50px 0;
+}
+
+@media (max-width: 1051px) {
+    .SectionPadding {
+        padding: 0 24px !important;
+    }
+}
+
+@media (max-width: 1351px) {
+    .Section1Info {
+        max-width: 886px;
+        max-height: max-content;
+        top: 296px;
+        left: 62px;
+    }
+
+    .Section1 h1 {
+        max-width: 100%;
+    }
+
+    .Section1 p {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .Section1Info {
+        max-width: 707px;
+        max-height: max-content;
+        top: 308px;
+        left: 24px;
+        padding: 20px 38px;
+    }
+
+    .Section1 h1 {
+        max-width: 100%;
+        font-size: 25px;
+        margin: 0;
+        line-height: 44px;
+    }
+
+    .Section1 p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .Section1Info {
+        max-width: 90%;
+        max-height: max-content;
+        top: 216px;
+        left: 26px;
+        padding: 20px 38px;
+    }
+
+    .InfoWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 200px;
+    }
+
+    .Section1 {
+        height: max-content !important;
+        padding-bottom: 20px;
+    }
+
+    .Section1 h1 {
+        text-align: center;
+        max-width: 100%;
+        font-size: 25px;
+        margin: 0;
+        line-height: 44px;
+    }
+
+    .Section1 p {
+        text-align: center;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .Section1Info {
+        max-width: 90%;
+        max-height: max-content;
+        top: 163px;
+        left: 20px;
+        padding: 20px 38px;
+    }
+
+    .Section1 img {
+        height: 866px !important;
+    }
+}

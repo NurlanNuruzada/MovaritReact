@@ -10,6 +10,10 @@
     min-height: 52px;
 }
 
+.IconContainerDark {
+    background: #59595999;
+}
+
 .Container {
     display: flex;
     align-items: center;
@@ -29,6 +33,7 @@
     justify-content: space-between;
     padding: 40px 0;
 }
+
 @media screen and (max-width: 1051px) {
     .Main {
         padding: 24px 0;
@@ -43,6 +48,11 @@
     line-height: 28px;
     text-align: left;
     color: rgba(43, 44, 46, 1);
+    cursor: pointer;
+}
+
+.ClearAllDark {
+    color: #B1B1B1;
 }
 
 @media screen and (max-width: 1051px) {

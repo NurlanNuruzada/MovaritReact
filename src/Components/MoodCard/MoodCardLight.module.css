@@ -1,0 +1,84 @@
+.CardWrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 0;
+    width: 420px;
+    height: 540px;
+}
+
+.CardPill {
+    background-color: #f5dfbacc !important;
+    backdrop-filter: blur(8px);
+    padding: 12px 16px;
+    color: rgba(1, 0, 17, 1);
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 28px;
+    margin-left: 28px;
+}
+
+.CardImg {
+    width: 420px;
+    height: 540px;
+    object-fit: cover;
+}
+
+.CardTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #2B2C2E;
+    width: 80%;
+}
+
+.CardText {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2B2C2E;
+    margin-bottom: 8px;
+}
+
+.CardFooterText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4D4F51;
+    display: flex;
+    align-self: flex-end;
+}
+
+.CardOverlayWrapper {
+    background-color: #f5dfbacc;
+    backdrop-filter: blur(8px);
+    height: 35%;
+    top: 65%;
+    border-radius: 0;
+    padding: 20px 28px;
+}
+
+.CardFooterUsers {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CardFooterUsers a {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:512px) {
+    .CardImg {
+        width: 380px;
+        height: 540px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .CardImg {
+        width: 340px;
+        height: 540px;
+    }
+}

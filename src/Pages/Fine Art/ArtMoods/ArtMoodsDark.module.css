@@ -11,7 +11,7 @@
 }
 
 .MainContainer {
-    background-color: rgba(255, 249, 238, 1);
+    background-color: #111111;
 }
 
 .Section1Info {
@@ -48,8 +48,8 @@
 }
 
 .Input {
-    width:356px !important;
-    height:44px !important;
+    width: 356px !important;
+    height: 44px !important;
     box-shadow: none;
     outline: none !important;
     border: none !important;
@@ -60,17 +60,17 @@
     font-weight: 400;
     text-align: left;
 }
+
 .Section2 {
     font-family: Poppins;
     font-size: 34px;
     font-weight: 600;
     line-height: 48px;
     text-align: left;
-    color: rgba(43, 44, 46, 1);
+    color: #F0F0F0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .Section2 h1 {
@@ -79,7 +79,6 @@
     font-weight: 600;
     line-height: 48px;
     text-align: left;
-
 }
 
 .Main {
@@ -165,7 +164,7 @@
     .Main {
         justify-content: space-between;
         row-gap: 56px;
-        grid-template-columns: repeat(4, 0fr);
+        grid-template-columns: repeat(3, 0fr);
     }
 
     .InfoWrapper {
@@ -182,11 +181,8 @@
     }
 
     .SectionPadding {
-        padding: 0;
-    }
-
-    .SectionPadding {
         padding: 0 !important;
+        padding-bottom: 256px !important;
     }
 }
 
@@ -205,6 +201,7 @@
 @media (max-width: 1051px) {
     .SectionPadding {
         padding: 0 24px !important;
+        padding-bottom: 128px !important;
     }
 }
 
@@ -223,7 +220,6 @@
     .Section1 p {
         max-width: 100%;
     }
-
 }
 
 @media (max-width: 1200px) {

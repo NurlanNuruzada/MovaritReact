@@ -25,15 +25,11 @@ export default function Routes() {
         },
         {
           path: "/Moods",
-          element: <Moods />,
-        },
-        {
-          path: "/MoodsCollection",
-          element: <Moods />,
+          element: <Moods theme={"dark"} />,
         },
         {
           path: "/ArtMoods",
-          element: <ArtMoods />,
+          element: <ArtMoods theme={"dark"} />,
         }
       ],
     },

@@ -7,6 +7,10 @@
     width: 162px;
 }
 
+.ContainerDark{
+    background-color: #4D4F51;
+}
+
 .Container span {
     font-family: Poppins;
     font-size: 18px;
@@ -16,3 +20,10 @@
     color: rgba(55, 56, 59, 1);
 }
 
+.ContainerDark span {
+    color: #F0F0F0;
+}
+
+.XIcon {
+    filter: brightness(0) contrast(100) invert(100);
+}

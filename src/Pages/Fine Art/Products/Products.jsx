@@ -18,17 +18,17 @@ export default function Products({ theme }) {
                 <FilterSetion theme={theme} Default={"All"} Sellections={Sellections} />
                 <div className={currentTheme.Padding}>
                     <NotFoundArtSectoin theme={theme} />
-                    <AllProducts />
+                    <AllProducts theme={theme} />
                 </div>
                 <div className={currentTheme.Paddingleft}>
                     <div style={{ padding: "96px 0" }}>
-                        <CustomSectionWihtSlider Title={"Collected for you"} />
+                        <CustomSectionWihtSlider theme={theme} Title={"Collected for you"} />
                     </div>
                     <div style={{ padding: "48px 0" }}>
-                        <CustomSectionWihtSlider Title={"Recently viewed"} />
+                        <CustomSectionWihtSlider theme={theme} Title={"Recently viewed"} />
                     </div>
-                    <div style={{ padding: "48px 0" }}>
-                        <UserCollection UserName={"Robert Tillberg"} />
+                    <div style={{ padding: "48px 0 180px 0" }}>
+                        <UserCollection theme={theme} UserName={"Robert Tillberg"} />
                     </div>
                 </div>
             </div>
