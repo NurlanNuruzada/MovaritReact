@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import SignUp from '../Pages/Fine Art/SignUp/SignUp'
 import Home from '../Pages/Fine Art/Home/Home'
 import Products from "../Pages/Fine Art/Products/Products";
+import Moods from "../Pages/Fine Art/Moods/Moods";
 
 export default function Routes() {
   const { token, email } = useSelector((x) => x.auth);
@@ -20,19 +21,27 @@ export default function Routes() {
         {
           path: "/Products",
           element: <Products />,
+        },
+        {
+          path: "/Moods",
+          element: <Moods />,
+        },
+        {
+          path: "/MoodsColection",
+          element: <Moods />,
         }
       ],
     },
     {
-      path: "/dark",
+      path: "/DigitalArt",
       element: <MainLayout />,
       children: [
         {
-          path: "/dark",
+          path: "/DigitalArt",
           element: <Home theme={"dark"} />,
         },
         {
-          path: "/dark/Products",
+          path: "/DigitalArt/Products",
           element: <Products />,
         }
       ],

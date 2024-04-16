@@ -12,7 +12,7 @@ export function MainLayout({ CenterText }) {
           <Header CenterText={CenterText} ShowButtons={true} />
         </ChakraProvider>
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
