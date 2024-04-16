@@ -1,6 +1,7 @@
 .MainWrapper {
     position: relative;
     padding-left: 62px;
+    padding-top: 32px;
 }
 
 .LeftImage {
@@ -9,17 +10,6 @@
     top: 789px;
     left: 62px;
     border-radius: 12px;
-}
-
-.TextSpan {
-    position: absolute;
-    display: block;
-    color: #F0F0F0;
-    line-height: 28px;
-    font-size: 18px;
-    font-weight: 600;
-    width: 336px;
-    bottom: 172px;
 }
 
 .Container {
@@ -57,7 +47,7 @@
     font-weight: 600;
     line-height: 28px;
     text-align: left;
-    color: #F0F0F0;
+    color: #CBCBCB;
 }
 
 .InfoContainer {
@@ -82,7 +72,7 @@
         width: 270px;
         bottom: 185px;
     }
-    
+
     .MainContent {
         flex-direction: column;
         padding-bottom: 0;

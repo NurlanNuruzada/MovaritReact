@@ -50,6 +50,7 @@
         font-weight: 700;
         line-height: 48px;
     }
+
     .WelcomeContainer {
         width: 285px !important;
         height: 65px !important;
@@ -57,16 +58,19 @@
         border-top-right-radius: 32px !important;
         padding: 16px !important;
     }
-    .WelcomeContainerCorner{
+
+    .WelcomeContainerCorner {
         width: 34px !important;
         height: 35px !important;
         background: radial-gradient(circle 34px at top right, #0000 98%, rgba(255, 249, 238, 1)) !important;
     }
-    .ClippedBgWrapper{
+
+    .ClippedBgWrapper {
         display: flex;
         align-items: flex-end;
-        justify-content: flex-end  !important;
+        justify-content: flex-end !important;
     }
+
     .TextSpan {
         color: #96734D;
         font-size: 14px !important;
@@ -74,7 +78,7 @@
         line-height: 20px !important;
         text-align: left !important;
     }
-    
+
 }
 
 @media screen and (max-width:449px) {
@@ -127,23 +131,38 @@
     background-color: rgba(255, 249, 238, 1);
     border-top-left-radius: 52px;
     border-top-right-radius: 52px;
-    justify-content: flex-end ;
+    justify-content: flex-end;
     width: 410px;
-    padding:25px 25px 25px 62px;
+    padding: 25px 25px 25px 62px;
+    transition: all 0.3s ease;
 }
-.WelcomeContainerCorner{
+
+@keyframes clipBg {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.WelcomeContainerCorner {
     border-top-right-radius: 82px;
     width: 45px;
     height: 47px;
     aspect-ratio: 1.5;
-    background: radial-gradient(circle 46px at top right, #0000 98%, rgba(255, 249, 238, 1));
+    background-image: radial-gradient(circle 46px at top right, #0000 98%, rgba(255, 249, 238, 1));
     background-repeat: no-repeat;
+    animation: clipBg 0.4s ease 1;
 }
-.ClippedBgWrapper{
+
+.ClippedBgWrapper {
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end  !important;
+    justify-content: flex-end !important;
 }
+
 .TextSpan {
     color: #96734D;
     line-height: 28px;

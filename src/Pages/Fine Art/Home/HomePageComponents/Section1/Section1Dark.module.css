@@ -121,19 +121,29 @@
     gap: 10px;
     border-radius: 100px;
     opacity: 0px;
-    background: rgba(255, 249, 238, 1);
-    color: rgba(150, 115, 77, 1);
+    background: #59595999;
+    color: #000000;
 }
 
 .WelcomeContainer {
     aspect-ratio: 1.5;
     height: 85px;
-    background-color: rgba(255, 249, 238, 1);
+    background-color: #111;
     border-top-left-radius: 52px;
     border-top-right-radius: 52px;
     justify-content: flex-end;
     width: 410px;
     padding: 25px 25px 25px 62px;
+    transition: all 0.3s ease;
+}
+
+@keyframes clipBg {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .WelcomeContainerCorner {
@@ -141,8 +151,9 @@
     width: 45px;
     height: 47px;
     aspect-ratio: 1.5;
-    background: radial-gradient(circle 46px at top right, #0000 98%, rgba(255, 249, 238, 1));
+    background-image: radial-gradient(circle 46px at top right, #0000 98%, #111);
     background-repeat: no-repeat;
+    animation: clipBg 0.4s ease 1;
 }
 
 .ClippedBgWrapper {
@@ -152,7 +163,7 @@
 }
 
 .TextSpan {
-    color: #96734D;
+    color: #E9E9E9;
     line-height: 28px;
     font-size: 18px;
     font-weight: 600;

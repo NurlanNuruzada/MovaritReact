@@ -3,8 +3,6 @@ import Styles from './Footer.module.css'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faAnglesUp } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons'

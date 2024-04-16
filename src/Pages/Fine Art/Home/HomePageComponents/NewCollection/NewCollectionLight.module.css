@@ -1,11 +1,6 @@
-.Main {
+.Main{
     padding: 0 0 0 64px;
 }
-
-.SeeAllIcon {
-    font-size: 24px;
-}
-
 .TitleContainer h1 {
     font-family: Poppins;
     font-size: 34px;
@@ -68,16 +63,13 @@
         line-height: 28px;
         text-align: left;
     }
-
     .TitleContainer {
         padding-top: 64px;
     }
-
-    .Main {
+    .Main{
         padding: 0 0 0 24px;
     }
 }
-
 .PaddingSettings {
     padding-right: 36px;
 }
@@ -86,7 +78,4 @@
     .PaddingSettings {
         padding-right: 24px;
     }
-}
-.Swiper{
-    display: none;
 }

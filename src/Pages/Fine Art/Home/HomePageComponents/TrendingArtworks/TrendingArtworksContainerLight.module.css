@@ -84,11 +84,6 @@
     }
 }
 
-.Slider {
-    min-width: max-content !important;
-    width: max-content !important;
-}
-
 .SliderWrapper>div {
     gap: 50px !important;
     padding-left: 20px !important;

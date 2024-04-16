@@ -1,0 +1,56 @@
+.CardBody {
+    padding: 0.5rem 2.75rem;
+    width: 460px;
+    height: 300px;
+    border: 1px solid #3535354D;
+    background-color: #1C1C1C;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.CardTitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #F0F0F0;
+    margin-bottom: 12px;
+}
+
+.CardText,
+.CardSubtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #E9E9E9;
+    text-align: center;
+}
+
+.CardSubtitle {
+    color: #CBCBCB;
+    margin-top: 28px;
+}
+
+.CardIcon {
+    position: absolute;
+    top: -27.5px;
+    transform: rotate(-180deg) scale(7);
+}
+
+@media screen and (max-width:512px) {
+    .CardBody {
+        padding: 0.5rem 2rem;
+        width: auto;
+        height: 360px;
+    }
+
+    .CardTitle {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .CardText,
+    .CardSubtitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
