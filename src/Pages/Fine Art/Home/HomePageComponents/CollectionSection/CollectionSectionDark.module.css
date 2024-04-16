@@ -1,4 +1,5 @@
-.SeeAllContainer, .TitleContainer{
+.SeeAllContainer,
+.TitleContainer {
     color: #E9E9E9;
 }
 
@@ -53,12 +54,6 @@
     padding-top: 100px;
 }
 
-.FlexContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 1.125rem;
-}
 
 @media screen and (max-width:1051px) {
     .MainContainer {
@@ -85,7 +80,7 @@
     }
 
     .FlexContainer {
-        display: none;
+        display: none !important;
     }
 
     .Main {
@@ -106,6 +101,13 @@
     display: none;
 }
 
-.PaddingSecttings {
+.PaddingSettings {
     padding-right: 24px;
+}
+
+.FlexContainer {
+    width: 100%;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr 1fr 1fr; /* Correct use of the fractional unit */
 }

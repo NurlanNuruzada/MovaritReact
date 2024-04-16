@@ -19,7 +19,7 @@ export default function TrendingCollection({ theme }) {
         swipeToSlide: true,
         variableWidth: true,
         arrows: false,
-        freeScroll: true
+        freeScroll: true ,
     };
     return (
         <div className={currentTheme.Main}>

@@ -11,9 +11,20 @@ import { FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import Slider from 'react-slick';
 
 export default function TrendingArtworksContainer({ theme }) {
     const currentTheme = theme === 'dark' ? Dark : Light;
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        variableWidth: true,
+        arrows: false,
+        freeScroll: true,
+    };
     return (
         <div className={currentTheme.Main}>
             <div className={currentTheme.TitleContainer}>
@@ -24,48 +35,13 @@ export default function TrendingArtworksContainer({ theme }) {
                 </div>
             </div>
             <div>
-                <Swiper
-                    freeMode={true}
-                    loop={true}
-                    modules={[FreeMode]}
-                    grabCursor={true}
-                    className="trendingArtWorks"
-                    breakpoints={{
-                        768: {
-                            slidesPerView: 4,
-                        },
-                        1051: {
-                            slidesPerView: 4,
-                        }
-                    }}
-                >
-                    <SwiperSlide className={currentTheme.Slider}>
-                        <div className={currentTheme.SliderPadding}>
+                <Slider {...settings}>
+                    {[...Array(8)].map((_, index) => (
+                        <div className={currentTheme.PaddingSecttings}>
                             <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
                         </div >
-                    </SwiperSlide>
-                    <SwiperSlide className={currentTheme.Slider}>
-                        <div className={currentTheme.SliderPadding}>
-                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                        </div >
-                    </SwiperSlide>
-                    <SwiperSlide className={currentTheme.Slider}>
-                        <div className={currentTheme.SliderPadding}>
-                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                        </div >
-                    </SwiperSlide>
-                    <SwiperSlide className={currentTheme.Slider}>
-                        <div className={currentTheme.SliderPadding}>
-                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                        </div >
-                    </SwiperSlide>
-                    <SwiperSlide className={currentTheme.Slider}>
-                        <div className={currentTheme.SliderPadding}>
-                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                        </div >
-                    </SwiperSlide>
-
-                </Swiper>
+                    ))}
+                </Slider>
             </div>
         </div>
     )

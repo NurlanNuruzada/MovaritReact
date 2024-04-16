@@ -59,7 +59,7 @@ export default function CollectionSection({theme}) {
             <div className={currentTheme.Main}>
                 <Slider {...settings}>
                     {[Category1, Category2, Category3, Category4, Category5, Category6].map((category, index) => (
-                        <div className={currentTheme.PaddingSecttings}>
+                        <div className={currentTheme.PaddingSettings}>
                             <CollectionCategory key={index} img={category} CategoryName={"Modern Minimalist"} />
                         </div>
                     ))}
