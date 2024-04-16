@@ -34,7 +34,7 @@ export default function Routes() {
     },
     {
       path: "/DigitalArt",
-      element: <MainLayout />,
+      element: <MainLayout theme={"dark"} />,
       children: [
         {
           path: "/DigitalArt",

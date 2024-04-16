@@ -16,6 +16,7 @@ import Dark from './FooterDark.module.css'
 
 export default function Footer({ theme }) {
   const currentTheme = theme === 'dark' ? Dark : Light;
+  console.log(theme)
   const [width, setWidth] = useState(window.innerWidth);
   function useWindowWidth() {
     useEffect(() => {
