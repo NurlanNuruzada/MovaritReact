@@ -4,7 +4,7 @@ import CheckerImage from '../../../../../Images/checker.png';
 import Styles from "./AllProducts.module.css";
 import CustomFilterSection from '../../../../../Components/CustomFilterSection/CustomFilterSection';
 
-export default function AllProducts() {
+export default function AllProducts({ theme }) {
     const products = new Array(12).fill(null);
 
     return (
@@ -13,6 +13,7 @@ export default function AllProducts() {
             <div className={Styles.Main}>
                 {products.map((_, index) => (
                     <Product
+                        theme={theme}
                         key={index}
                         ArtPrice={"$ 2,000"}
                         ArtDes={"Acrylic, Gilding on Canvas 47x47in"}

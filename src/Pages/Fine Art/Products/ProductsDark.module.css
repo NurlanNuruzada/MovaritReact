@@ -1,0 +1,30 @@
+.Main {
+    height: 100%;
+    background-color: #111111;
+}
+
+.Center {
+    max-width: 1440px;
+    margin: 0 auto !important;
+}
+
+.Padding {
+    padding: 0 62px;
+}
+
+.Paddingleft {
+    padding: 0 62px;
+}
+
+@media (max-width: 1070px) {
+    .Padding {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .Paddingleft {
+        padding-right: 0;
+        padding-left: 24px;
+    }
+}

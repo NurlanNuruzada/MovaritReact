@@ -1,24 +1,26 @@
 import React from 'react'
-import Styles from './Products.module.css'
 import Section1 from './ProcutsComponents/Section1/Section1'
 import FilterSetion from './ProcutsComponents/FilterSection/FilterSetion'
 import AllProducts from './ProcutsComponents/AllProductsSection/AllProducts'
 import CustomSectionWihtSlider from '../../../Components/CustomSectionWithSlider/CustomSectionWihtSlider'
 import UserCollection from '../../../Components/UserCollections/UserCollection'
 import NotFoundArtSectoin from '../../../Components/NotFoundArtSection/NotFoundArtSectoin'
-export default function Products() {
-    const Sellections = ["All", "Recomended", "Mostly Viewed", "RecentlyAdded"]
+import Light from './ProductsLight.module.css'
+import Dark from './ProductsDark.module.css'
 
+export default function Products({ theme }) {
+    const currentTheme = theme === 'dark' ? Dark : Light;
+    const Sellections = ["All", "Recomended", "Mostly Viewed", "RecentlyAdded"]
     return (
-        <div className={Styles.Main}>
-            <Section1 />
-            <div className={Styles.Center}>
-                <FilterSetion Default={"All"} Sellections={Sellections} />
-                <div className={Styles.Padding}>
-                    <NotFoundArtSectoin />
+        <div className={currentTheme.Main}>
+            <Section1 theme={theme} />
+            <div className={currentTheme.Center}>
+                <FilterSetion theme={theme} Default={"All"} Sellections={Sellections} />
+                <div className={currentTheme.Padding}>
+                    <NotFoundArtSectoin theme={theme} />
                     <AllProducts />
                 </div>
-                <div className={Styles.Paddingleft}>
+                <div className={currentTheme.Paddingleft}>
                     <div style={{ padding: "96px 0" }}>
                         <CustomSectionWihtSlider Title={"Collected for you"} />
                     </div>

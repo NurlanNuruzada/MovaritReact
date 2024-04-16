@@ -5,8 +5,9 @@ import Background from '../../../../../Images/BackgroundImage/image 114.png';
 import NavigateOptions from '../../../../../Components/NavigateOptions/NavigateOptions';
 import Filter from '../../../../../Components/Filters/Filter';
 import CustomFilterSection from '../../../../../Components/CustomFilterSection/CustomFilterSection';
+import { theme } from '@chakra-ui/react';
 
-export default function Section1() {
+export default function Section1({ theme }) {
     const [width, setWidth] = useState(window.innerWidth);
     function useWindowWidth() {
         useEffect(() => {
@@ -27,7 +28,7 @@ export default function Section1() {
             <img className={width > 440 ? Styles.Section1Image : Styles.Section2Image} src={width > 440 ? Image : Background} alt="" />
             <div className={Styles.TextContainer}>
                 <h1>Discover Art world</h1>
-                <NavigateOptions />
+                <NavigateOptions theme={theme} />
             </div>
 
         </div>

@@ -15,7 +15,7 @@ import Light from './HeaderLight.module.css'
 import Dark from './HeaderDark.module.css'
 
 
-export default function Header({InlineText, theme}) {
+export default function Header({ InlineText, theme }) {
   const currentTheme = theme === 'dark' ? Dark : Light;
   const [showSignIn, setShowSignIn] = useState(false)
   return (
@@ -44,8 +44,8 @@ export default function Header({InlineText, theme}) {
                     <Input className={currentTheme.Input} type='text' placeholder='Search' />
                   </InputGroup>
                 </ChakraProvider>
-                <div className={currentTheme.Buttons} onClick={() => { setShowSignIn(true) }}><img src={ProfileImage} alt="" srcset="" /></div>
-                <div className={currentTheme.Buttons}><img src={buyImage} alt="" srcset="" /></div>
+                <div className={currentTheme.Buttons} onClick={() => { setShowSignIn(true) }}><img src={ProfileImage} alt="" /></div>
+                <div className={currentTheme.Buttons}><img src={buyImage} alt="" /></div>
               </div>
             </div>
           </div>
@@ -55,13 +55,13 @@ export default function Header({InlineText, theme}) {
       <div className={currentTheme.MobileMain}>
         <div className={currentTheme.MobileContainer}>
           <div className={currentTheme.ButtonContainer}>
-            <img src={Image1} alt="" srcSet="" />
-            <img src={Image3} alt="" srcSet="" />
+            <img src={Image1} alt="" />
+            <img src={Image3} alt="" />
           </div>
-          <img src={Image} alt="" srcSet="" />
+          <img src={Image} alt="" />
           <div className={currentTheme.ButtonContainer}>
-            <img onClick={() => { setShowSignIn(true) }} src={Profile} alt="" srcset="" />
-            <img src={Buy} alt="" srcset="" />
+            <img onClick={() => { setShowSignIn(true) }} src={Profile} alt="" />
+            <img src={Buy} alt="" />
           </div>
         </div>
         {showSignIn && <SignIn setShowSignIn={setShowSignIn} showing={showSignIn} />}

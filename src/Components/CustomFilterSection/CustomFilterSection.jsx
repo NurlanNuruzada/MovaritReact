@@ -1,13 +1,13 @@
 import React from 'react'
-import FiterImage from '../../Images/Icons/Filter.svg'
+import FilterImage from '../../Images/Icons/Filter.svg'
 import Styles from './CustomFilterSection.module.css'
 import FilterType from './FilterType'
-export default function CustomFilterSection() {
+export default function CustomFilterSection({ theme }) {
     return (
         <div className={Styles.Main}>
             <div className={Styles.Container}>
                 <div className={Styles.IconContainer}>
-                    <img src={FiterImage} alt="" />
+                    <img src={FilterImage} alt="" />
                 </div>
                 <div className={Styles.Container2}>
                     <FilterType name={"Painting"} />
