@@ -19,7 +19,7 @@ export default function TrendingCollection({ theme }) {
         swipeToSlide: true,
         variableWidth: true,
         arrows: false,
-        freeScroll: true
+        freeScroll: true ,
     };
     return (
         <div className={currentTheme.Main}>
@@ -32,7 +32,7 @@ export default function TrendingCollection({ theme }) {
             </div>
             <Slider {...settings}>
                 {[...Array(8)].map((_, index) => (
-                    <div key={index} className={`${Styles.PaddingSecttings} ${index === 7 ? Styles.lastSlidePadding : ''}`}>
+                    <div key={index} className={`${currentTheme.PaddingSecttings} ${index === 7 ? currentTheme.lastSlidePadding : ''}`}>
                         <Collection theme={theme} ArtDes="Includes 20 art pieces" ArtName="Sapphire Collection" Image={CheckerImage} />
                     </div>
                 ))}

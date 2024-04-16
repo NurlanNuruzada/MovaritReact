@@ -90,7 +90,10 @@
 }
 
 @media screen and (max-width:1051px) {
-    .PaddingSettings {
-        padding-right: 24px;
+    .PaddingSecttings{
+        padding-right: 15px !important;
     }
+}
+.PaddingSecttings{
+    padding-right: 36px;
 }
