@@ -1,6 +1,7 @@
 .MainWrapper {
     position: relative;
     padding-left: 62px;
+    padding-top: 32px;
 }
 
 .LeftImage {
@@ -11,16 +12,6 @@
     border-radius: 12px;
 }
 
-.TextSpan {
-    position: absolute;
-    display: block;
-    color: #96734D;
-    line-height: 28px;
-    font-size: 18px;
-    font-weight: 600;
-    width: 336px;
-    bottom: 172px;
-}
 
 .Container {
     display: flex;

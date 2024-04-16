@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './Section1.module.css';
 import Image from '../../../../../Images/Section1.png';
 import Background from '../../../../../Images/mobileBackground.png';
-import ClippedLongBg from '../../../../../Images/Clipped-Long.svg';
-import ClippedShortBg from '../../../../../Images/Clipped-Short.svg';
 import NavigateOptions from '../../../../../Components/NavigateOptions/NavigateOptions';
 
 export default function Section1() {
@@ -30,7 +28,11 @@ export default function Section1() {
         <NavigateOptions />
       </div>
       <span className={styles.ClippedBgWrapper}>
-        <img src={width > 1200 ? ClippedLongBg : ClippedShortBg} alt="" />
+        <div className={styles.WelcomeContainer}>
+        <span className={styles.TextSpan}>Welcome to Morvarid, where art meets passion. Explore our curated collection of breathtaking artworks</span>
+        </div>
+        <div className={styles.WelcomeContainerCorner}>
+        </div>
       </span>
     </div>
   );

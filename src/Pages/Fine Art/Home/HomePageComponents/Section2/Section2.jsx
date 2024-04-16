@@ -22,7 +22,6 @@ export default function Section2() {
         <div className={`${Styles.MainWrapper}`}>
             <div className={Styles.MainContent}>
             <span className='position-relative'>
-                    <span className={Styles.TextSpan}>Welcome to Morvarid, where art meets passion. Explore our curated collection of breathtaking artworks</span>
                     <img className={Styles.LeftImage} src={width > 440 ? Image : Background} alt="" />
                 </span>
                 <div className={Styles.Container}>

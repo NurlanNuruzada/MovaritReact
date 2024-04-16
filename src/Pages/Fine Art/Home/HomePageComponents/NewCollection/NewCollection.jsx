@@ -1,11 +1,11 @@
-import React from 'react'
-import Styles from './NewCollection.module.css'
-import Image from '../../../../../Images/arrow-right.svg'
+import React from 'react';
+import Styles from './NewCollection.module.css';
+import Image from '../../../../../Images/arrow-right.svg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Collection from '../../../../../Components/CollectionCard/Collection';
-import CheckerImage from '../../../../../Images/checker.png'
+import CheckerImage from '../../../../../Images/checker.png';
 
 export default function TrendingCollection() {
     var settings = {
@@ -13,8 +13,8 @@ export default function TrendingCollection() {
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
-        swipeToSlide: true,  
-        variableWidth: true, 
+        swipeToSlide: true,
+        variableWidth: true,
         arrows: false,
         freeScroll: true
     };
@@ -24,37 +24,16 @@ export default function TrendingCollection() {
                 <h1>Newest Collections</h1>
                 <div className={Styles.SeeAllContainer}>
                     <p>See all</p>
-                    <img src={Image} alt="" srcset="" />
+                    <img src={Image} alt="" />
                 </div>
             </div>
-            <div>
-                <Slider {...settings}>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
+            <Slider {...settings}>
+                {[...Array(8)].map((_, index) => (
+                    <div key={index} className={`${Styles.PaddingSecttings} ${index === 7 ? Styles.lastSlidePadding : ''}`}>
+                        <Collection ArtDes="Includes 20 art pieces" ArtName="Sapphire Collection" Image={CheckerImage} />
                     </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={Styles.PaddingSecttings}>
-                        <Collection ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                </Slider>
-            </div>
+                ))}
+            </Slider>
         </div>
     )
 }
