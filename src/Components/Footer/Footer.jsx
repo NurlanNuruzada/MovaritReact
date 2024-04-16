@@ -31,14 +31,14 @@ export default function Footer() {
   }
   useWindowWidth()
   return (
-    <div>
-      <div style={{ backgroundColor: " rgba(243, 238, 221, 1)", width: "100%" }}>
-        <div className={Styles.MainWrapper}>
+    <div style={{ backgroundColor: " rgba(243, 238, 221, 1)", width: "100%" }}>
+      <div className={Styles.MainWrapper}>
+        <span className={Styles.ClippedImgWrapper}>
+          <img className={Styles.ClippedImg} src={TopImg} alt="" />
+          <img className={Styles.LogoText} src={LogoText} alt="" />
+        </span>
+        <div className={Styles.MaxWid}>
           <div className={Styles.Main}>
-            <span className={Styles.ClippedImgWrapper}>
-              <img className={Styles.ClippedImg} src={TopImg} alt="" />
-              <img className={Styles.LogoText} src={LogoText} alt="" />
-            </span>
             <div className='d-flex mb-3 flex-column flex-lg-row align-items-center'>
               <div className='d-flex flex-column col-10 col-lg-4'>
                 <div className={Styles.Newsletter}>

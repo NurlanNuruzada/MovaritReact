@@ -23,8 +23,7 @@ export default function Section2({theme}) {
     return (
         <div className={`${currentTheme.MainWrapper}`}>
             <div className={currentTheme.MainContent}>
-                <span className='position-relative'>
-                    <span className={currentTheme.TextSpan}>Welcome to Morvarid, where art meets passion. Explore our curated collection of breathtaking artworks</span>
+            <span className='position-relative'>
                     <img className={currentTheme.LeftImage} src={width > 440 ? Image : Background} alt="" />
                 </span>
                 <div className={currentTheme.Container}>

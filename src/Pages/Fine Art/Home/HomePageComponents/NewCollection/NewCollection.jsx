@@ -1,7 +1,6 @@
 import React from 'react'
 import Light from './NewCollectionLight.module.css'
 import Dark from './NewCollectionDark.module.css'
-import Image from '../../../../../Images/arrow-right.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,8 +16,8 @@ export default function TrendingCollection({ theme }) {
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
-        swipeToSlide: true,  
-        variableWidth: true, 
+        swipeToSlide: true,
+        variableWidth: true,
         arrows: false,
         freeScroll: true
     };
@@ -31,34 +30,13 @@ export default function TrendingCollection({ theme }) {
                     <FontAwesomeIcon className={`${currentTheme.SeeAllIcon} ms-2`} icon={faArrowRightLong} />
                 </div>
             </div>
-            <div>
-                <Slider {...settings}>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
+            <Slider {...settings}>
+                {[...Array(8)].map((_, index) => (
+                    <div key={index} className={`${Styles.PaddingSecttings} ${index === 7 ? Styles.lastSlidePadding : ''}`}>
+                        <Collection theme={theme} ArtDes="Includes 20 art pieces" ArtName="Sapphire Collection" Image={CheckerImage} />
                     </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                    <div className={currentTheme.PaddingSettings}>
-                        <Collection theme={theme} ArtDes={"Includes 20 art pieces1"} ArtName={"Saphire Collection"} Image={CheckerImage} />
-                    </div>
-                </Slider>
-            </div>
+                ))}
+            </Slider>
         </div>
     )
 }

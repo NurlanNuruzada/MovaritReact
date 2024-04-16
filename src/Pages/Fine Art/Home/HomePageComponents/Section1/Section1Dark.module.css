@@ -36,11 +36,6 @@
     bottom: -2px;
 }
 
-.ClippedBgWrapper img {
-    filter: invert(0%) sepia(50%) saturate(1347%) hue-rotate(345deg) brightness(96%) contrast(87%);
-    transition: filter 0.3s ease;
-}
-
 @media screen and (max-width:950px) {
     .TextContainer h1 {
         font-size: 56px;
@@ -55,6 +50,35 @@
         font-weight: 700;
         line-height: 48px;
     }
+
+    .WelcomeContainer {
+        width: 285px !important;
+        height: 65px !important;
+        border-top-left-radius: 32px !important;
+        border-top-right-radius: 32px !important;
+        padding: 16px !important;
+    }
+
+    .WelcomeContainerCorner {
+        width: 34px !important;
+        height: 35px !important;
+        background: radial-gradient(circle 34px at top right, #0000 98%, rgba(255, 249, 238, 1)) !important;
+    }
+
+    .ClippedBgWrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end !important;
+    }
+
+    .TextSpan {
+        color: #96734D;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        line-height: 20px !important;
+        text-align: left !important;
+    }
+
 }
 
 @media screen and (max-width:449px) {
@@ -99,4 +123,39 @@
     opacity: 0px;
     background: rgba(255, 249, 238, 1);
     color: rgba(150, 115, 77, 1);
+}
+
+.WelcomeContainer {
+    aspect-ratio: 1.5;
+    height: 85px;
+    background-color: rgba(255, 249, 238, 1);
+    border-top-left-radius: 52px;
+    border-top-right-radius: 52px;
+    justify-content: flex-end;
+    width: 410px;
+    padding: 25px 25px 25px 62px;
+}
+
+.WelcomeContainerCorner {
+    border-top-right-radius: 82px;
+    width: 45px;
+    height: 47px;
+    aspect-ratio: 1.5;
+    background: radial-gradient(circle 46px at top right, #0000 98%, rgba(255, 249, 238, 1));
+    background-repeat: no-repeat;
+}
+
+.ClippedBgWrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end !important;
+}
+
+.TextSpan {
+    color: #96734D;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 336px;
+    bottom: 172px;
 }

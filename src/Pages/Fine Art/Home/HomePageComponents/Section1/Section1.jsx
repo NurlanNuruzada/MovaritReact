@@ -3,11 +3,9 @@ import Light from './Section1Light.module.css';
 import Dark from './Section1Dark.module.css';
 import Image from '../../../../../Images/Section1.png';
 import Background from '../../../../../Images/mobileBackground.png';
-import ClippedLongBg from '../../../../../Images/Clipped-Long.svg';
-import ClippedShortBg from '../../../../../Images/Clipped-Short.svg';
 import NavigateOptions from '../../../../../Components/NavigateOptions/NavigateOptions';
 
-export default function Section1({theme}) {
+export default function Section1({ theme }) {
   const [width, setWidth] = useState(window.innerWidth);
   const currentTheme = theme === 'dark' ? Dark : Light;
   function useWindowWidth() {
@@ -32,7 +30,11 @@ export default function Section1({theme}) {
         <NavigateOptions theme={theme} />
       </div>
       <span className={currentTheme.ClippedBgWrapper}>
-        <img src={width > 1200 ? ClippedLongBg : ClippedShortBg} alt="" />
+        <div className={currentTheme.WelcomeContainer}>
+          <span className={currentTheme.TextSpan}>Welcome to Morvarid, where art meets passion. Explore our curated collection of breathtaking artworks</span>
+        </div>
+        <div className={currentTheme.WelcomeContainerCorner}>
+        </div>
       </span>
     </div>
   );
