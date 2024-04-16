@@ -1,8 +1,5 @@
 import React, { useRef } from 'react'
 import Styles from './Testimonials.module.css'
-import Image from '../../../../../Images/arrow-right.svg'
-import Slider from "react-slick";
-import CheckerImage from '../../../../../Images/checker.png'
 import TestimonialCard from './../../../../../Components/TestimonialCard/TestimonialCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesLeft, faAnglesRight } from '@fortawesome/free-solid-svg-icons'
@@ -25,11 +22,9 @@ export default function TrendingArtworksContainer() {
                     onSwiper={(swiper) => {
                         swiperRef.current = swiper;
                     }}
+                    grabCursor={true}
                     loop={true}
                     centeredSlides={true}
-                    pagination={{
-                        clickable: false,
-                    }}
                     breakpoints={{
                         768: {
                             slidesPerView: 1,

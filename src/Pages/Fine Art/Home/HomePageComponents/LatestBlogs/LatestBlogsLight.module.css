@@ -29,9 +29,9 @@
 
 }
 
-.SeeAllContainer img {
-    width: 24px;
-    height: 24px;
+.SeeAllIcon {
+    font-size: 24px;
+    color: #2B2C2E;
 }
 
 .TitleContainer {
@@ -53,7 +53,7 @@
 }
 
 @media screen and (max-width:512px) {
-    .SliderWrapper{
+    .SliderWrapper {
         height: 550px;
     }
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Light from './TrendingArtworksContainerLight.module.css'
 import Dark from './TrendingArtworksContainerDark.module.css'
-import Image from '../../../../../Images/arrow-right.svg'
 import ArtWork from '../../../../../Components/ArtWork/ArtWork';
 import CheckerImage from '../../../../../Images/checker.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +12,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-export default function TrendingArtworksContainer({theme}) {
+export default function TrendingArtworksContainer({ theme }) {
     const currentTheme = theme === 'dark' ? Dark : Light;
     return (
         <div className={currentTheme.Main}>
@@ -33,39 +32,39 @@ export default function TrendingArtworksContainer({theme}) {
                     className="trendingArtWorks"
                     breakpoints={{
                         768: {
-                            slidesPerView:4,
+                            slidesPerView: 4,
                         },
                         1051: {
                             slidesPerView: 4,
                         }
                     }}
                 >
-                        <SwiperSlide className={Styles.Slider}>
-                         <div className={Styles.SliderPadding}>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                    </div >
+                    <SwiperSlide className={currentTheme.Slider}>
+                        <div className={currentTheme.SliderPadding}>
+                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        </div >
                     </SwiperSlide>
-                        <SwiperSlide className={Styles.Slider}>
-                         <div className={Styles.SliderPadding}>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                    </div >
+                    <SwiperSlide className={currentTheme.Slider}>
+                        <div className={currentTheme.SliderPadding}>
+                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        </div >
                     </SwiperSlide>
-                        <SwiperSlide className={Styles.Slider}>
-                         <div className={Styles.SliderPadding}>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                    </div >
+                    <SwiperSlide className={currentTheme.Slider}>
+                        <div className={currentTheme.SliderPadding}>
+                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        </div >
                     </SwiperSlide>
-                        <SwiperSlide className={Styles.Slider}>
-                         <div className={Styles.SliderPadding}>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                    </div >
+                    <SwiperSlide className={currentTheme.Slider}>
+                        <div className={currentTheme.SliderPadding}>
+                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        </div >
                     </SwiperSlide>
-                        <SwiperSlide className={Styles.Slider}>
-                         <div className={Styles.SliderPadding}>
-                        <ArtWork ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
-                    </div >
+                    <SwiperSlide className={currentTheme.Slider}>
+                        <div className={currentTheme.SliderPadding}>
+                            <ArtWork theme={theme} ArtPrice={"$ 2,0001"} ArtDes={"Acrylic, Gilding on Canvas 47x47in"} ArtName={"Golden Light"} Image={CheckerImage} />
+                        </div >
                     </SwiperSlide>
-                   
+
                 </Swiper>
             </div>
         </div>

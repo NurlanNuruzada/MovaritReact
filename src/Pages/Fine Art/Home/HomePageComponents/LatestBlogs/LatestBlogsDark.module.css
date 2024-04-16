@@ -1,18 +1,5 @@
 .Main {
-    padding: 0 0 0 64px;
-}
-
-.SeeAllIcon,
-.SeeAllContainer {
-    color: #B1B1B1;
-}
-
-.SeeAllIcon {
-    font-size: 24px;
-}
-
-.TitleContainer {
-    color: #E9E9E9;
+    padding: 71px 50px 0 62px;
 }
 
 .TitleContainer h1 {
@@ -21,6 +8,7 @@
     font-weight: 600;
     line-height: 48px;
     text-align: left;
+    color: #E9E9E9;
     margin: 0;
 }
 
@@ -37,29 +25,43 @@
     font-weight: 500;
     line-height: 32px;
     text-align: left;
+    color: #B1B1B1;
 }
 
-.SeeAllContainer img {
-    width: 24px;
-    height: 24px;
+.SeeAllIcon,
+.SeeAllContainer {
+    color: #B1B1B1;
+}
+
+.SeeAllIcon {
+    font-size: 24px;
 }
 
 .TitleContainer {
-    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 28px;
-    padding-right: 64px;
 }
 
 .SliderItem {
     margin: 0 !important;
     width: max-content !important;
-    margin-right: 32px !important;
+    margin: 0 16px !important;
 }
 
-@media screen and (max-width:1051px) {
+
+.PaddingSettings {
+    padding-right: 25px;
+}
+
+@media screen and (max-width:512px) {
+    .SliderWrapper {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:1200px) {
     .TitleContainer h1 {
         font-family: Poppins;
         font-size: 20px;
@@ -76,21 +78,12 @@
         text-align: left;
     }
 
-    .TitleContainer {
-        padding-top: 64px;
-    }
-
     .Main {
-        padding: 0 0 0 24px;
+        padding: 94px 24px 0 24px;
     }
-}
 
-.PaddingSettings {
-    padding-right: 36px;
-}
-
-@media screen and (max-width:1051px) {
     .PaddingSettings {
-        padding-right: 24px;
+        padding-right: 19px;
+        padding-left: 19px;
     }
 }

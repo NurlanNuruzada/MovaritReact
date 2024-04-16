@@ -2,11 +2,16 @@
     padding: 71px 50px 0 62px;
 }
 
-.SeeAllIcon{
+.SeeAllIcon,
+.SeeAllContainer {
+    color: #B1B1B1;
+}
+
+.SeeAllIcon {
     font-size: 24px;
 }
 
-.SeeAllContainer, .TitleContainer{
+.TitleContainer{
     color: #E9E9E9;
 }
 
