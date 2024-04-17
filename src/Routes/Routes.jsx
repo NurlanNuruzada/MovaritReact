@@ -13,28 +13,28 @@ export default function Routes() {
   let routes = [
     {
       path: "/",
-      element: <MainLayout theme={"dark"} />,
+      element: <MainLayout theme={"light"} />,
       children: [
         {
           path: "/",
-          element: <Home theme={"dark"} />,
+          element: <Home theme={"light"} />,
         },
         {
           path: "/Products",
-          element: <Products theme={"dark"} />,
+          element: <Products theme={"light"} />,
         },
         {
           path: "/Moods",
-          element: <Moods theme={"dark"} />,
+          element: <Moods theme={"light"} />,
         },
         {
           path: "/ArtMoods",
-          element: <ArtMoods theme={"dark"} />,
+          element: <ArtMoods theme={"light"} />,
         }
       ],
     },
     {
-      path: "/DigitalArt",
+      path: "/",
       element: <MainLayout theme={"dark"} />,
       children: [
         {
@@ -42,8 +42,16 @@ export default function Routes() {
           element: <Home theme={"dark"} />,
         },
         {
-          path: "/DigitalArt/Products",
-          element: <Products />,
+          path: "DigitalArt/Products",
+          element: <Products theme={"dark"} />,
+        },
+        {
+          path: "DigitalArt/Moods",
+          element: <Moods theme={"dark"} />,
+        },
+        {
+          path: "DigitalArt/ArtMoods",
+          element: <ArtMoods theme={"dark"} />,
         }
       ],
     },

@@ -27,7 +27,7 @@ export default function Section1({ theme }) {
       <div className={currentTheme.TextContainer}>
         <h1>Discover Artworks</h1>
         <h1>Beyond Boundaries</h1>
-        <NavigateOptions theme={theme} />
+        <NavigateOptions option1={"/"} option2={"/DigitalArt"} theme={theme} />
       </div>
       <span className={currentTheme.ClippedBgWrapper}>
         <div className={currentTheme.WelcomeContainer}>

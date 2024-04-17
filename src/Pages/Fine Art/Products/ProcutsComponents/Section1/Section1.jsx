@@ -28,7 +28,7 @@ export default function Section1({ theme }) {
             <img className={width > 440 ? Styles.Section1Image : Styles.Section2Image} src={width > 440 ? Image : Background} alt="" />
             <div className={Styles.TextContainer}>
                 <h1>Discover Art world</h1>
-                <NavigateOptions theme={theme} />
+                <NavigateOptions option1={"/Products"} option2={"/DigitalArt/Products"} theme={theme} />
             </div>
 
         </div>
